@@ -16,6 +16,7 @@
 *.out
 *.app
 
+/.build/
 # Downloaded and built directories
 /build/
 /include/
