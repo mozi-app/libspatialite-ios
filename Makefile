@@ -25,6 +25,8 @@ LIBDIR = ${PREFIX}/lib
 BINDIR = ${PREFIX}/bin
 INCLUDEDIR = ${PREFIX}/include
 UTHASHDIR = ${CURDIR}/uthash
+# Define the include directory
+INCLUDEDIR = ${PREFIX}/include
 
 CXX = ${XCODE_DEVELOPER}/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 CC = ${XCODE_DEVELOPER}/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
@@ -32,7 +34,17 @@ CFLAGS =-target ${IOS_TARGET} -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${
 CXXFLAGS =-target ${IOS_TARGET} -stdlib=libc++ -std=c++11 -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} -mios-version-min=17.0 -Os -fembed-bitcode
 LDFLAGS =-stdlib=libc++ -isysroot ${IOS_SDK} -L${LIBDIR} -L${IOS_SDK}/usr/lib -arch ${IOS_ARCH} -mios-version-min=17.0
 
-arch: ${LIBDIR}/libspatialite.a
+# Ensure the module map is copied to the include directory
+install_headers: ${CURDIR}/spatialite
+	mkdir -p ${INCLUDEDIR}
+	cp -r ${CURDIR}/spatialite/include/* ${INCLUDEDIR}/
+
+# Add a rule to copy the module map
+install_modulemap: ${CURDIR}/spatialite
+	cp ${CURDIR}/spatialite/include/module.modulemap ${INCLUDEDIR}/
+
+# Ensure the install_headers and install_modulemap are called during the build
+arch: ${LIBDIR}/libspatialite.a install_headers install_modulemap
 
 ${LIBDIR}/libspatialite.a: ${LIBDIR}/libsqlite3.a ${LIBDIR}/libproj.a ${LIBDIR}/libgeos.a ${LIBDIR}/rttopo.a ${CURDIR}/spatialite
 	cd spatialite && env \

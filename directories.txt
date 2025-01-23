@@ -1,0 +1,1678 @@
+./.build/artifacts
+├── extract
+│   └── v3-libspatialite-ios
+│       └── libspatialite
+└── v3-libspatialite-ios
+    └── libspatialite
+        ├── __MACOSX
+        │   └── libspatialite.xcframework
+        │       ├── ios-arm64
+        │       │   └── Headers
+        │       │       ├── geos
+        │       │       │   ├── algorithm
+        │       │       │   │   ├── construct
+        │       │       │   │   ├── distance
+        │       │       │   │   ├── hull
+        │       │       │   │   └── locate
+        │       │       │   ├── coverage
+        │       │       │   ├── edgegraph
+        │       │       │   ├── geom
+        │       │       │   │   ├── prep
+        │       │       │   │   └── util
+        │       │       │   ├── geomgraph
+        │       │       │   │   └── index
+        │       │       │   ├── index
+        │       │       │   │   ├── bintree
+        │       │       │   │   ├── chain
+        │       │       │   │   ├── intervalrtree
+        │       │       │   │   ├── kdtree
+        │       │       │   │   ├── quadtree
+        │       │       │   │   ├── strtree
+        │       │       │   │   └── sweepline
+        │       │       │   ├── io
+        │       │       │   ├── linearref
+        │       │       │   ├── math
+        │       │       │   ├── noding
+        │       │       │   │   ├── snap
+        │       │       │   │   └── snapround
+        │       │       │   ├── operation
+        │       │       │   │   ├── buffer
+        │       │       │   │   ├── cluster
+        │       │       │   │   ├── distance
+        │       │       │   │   ├── intersection
+        │       │       │   │   ├── linemerge
+        │       │       │   │   ├── overlay
+        │       │       │   │   │   ├── snap
+        │       │       │   │   │   └── validate
+        │       │       │   │   ├── overlayng
+        │       │       │   │   ├── polygonize
+        │       │       │   │   ├── predicate
+        │       │       │   │   ├── relate
+        │       │       │   │   ├── sharedpaths
+        │       │       │   │   ├── union
+        │       │       │   │   └── valid
+        │       │       │   ├── planargraph
+        │       │       │   │   └── algorithm
+        │       │       │   ├── precision
+        │       │       │   ├── shape
+        │       │       │   │   └── fractal
+        │       │       │   ├── simplify
+        │       │       │   ├── triangulate
+        │       │       │   │   ├── polygon
+        │       │       │   │   ├── quadedge
+        │       │       │   │   └── tri
+        │       │       │   ├── util
+        │       │       │   └── vend
+        │       │       ├── proj
+        │       │       ├── spatialite
+        │       │       └── unicode
+        │       └── ios-arm64-simulator
+        │           └── Headers
+        │               ├── geos
+        │               │   ├── algorithm
+        │               │   │   ├── construct
+        │               │   │   ├── distance
+        │               │   │   ├── hull
+        │               │   │   └── locate
+        │               │   ├── coverage
+        │               │   ├── edgegraph
+        │               │   ├── geom
+        │               │   │   ├── prep
+        │               │   │   └── util
+        │               │   ├── geomgraph
+        │               │   │   └── index
+        │               │   ├── index
+        │               │   │   ├── bintree
+        │               │   │   ├── chain
+        │               │   │   ├── intervalrtree
+        │               │   │   ├── kdtree
+        │               │   │   ├── quadtree
+        │               │   │   ├── strtree
+        │               │   │   └── sweepline
+        │               │   ├── io
+        │               │   ├── linearref
+        │               │   ├── math
+        │               │   ├── noding
+        │               │   │   ├── snap
+        │               │   │   └── snapround
+        │               │   ├── operation
+        │               │   │   ├── buffer
+        │               │   │   ├── cluster
+        │               │   │   ├── distance
+        │               │   │   ├── intersection
+        │               │   │   ├── linemerge
+        │               │   │   ├── overlay
+        │               │   │   │   ├── snap
+        │               │   │   │   └── validate
+        │               │   │   ├── overlayng
+        │               │   │   ├── polygonize
+        │               │   │   ├── predicate
+        │               │   │   ├── relate
+        │               │   │   ├── sharedpaths
+        │               │   │   ├── union
+        │               │   │   └── valid
+        │               │   ├── planargraph
+        │               │   │   └── algorithm
+        │               │   ├── precision
+        │               │   ├── shape
+        │               │   │   └── fractal
+        │               │   ├── simplify
+        │               │   ├── triangulate
+        │               │   │   ├── polygon
+        │               │   │   ├── quadedge
+        │               │   │   └── tri
+        │               │   ├── util
+        │               │   └── vend
+        │               ├── proj
+        │               ├── spatialite
+        │               └── unicode
+        └── libspatialite.xcframework
+            ├── Info.plist
+            ├── ios-arm64
+            │   ├── Headers
+            │   │   ├── geodesic.h
+            │   │   ├── geos
+            │   │   │   ├── algorithm
+            │   │   │   │   ├── Angle.h
+            │   │   │   │   ├── Area.h
+            │   │   │   │   ├── BoundaryNodeRule.h
+            │   │   │   │   ├── CGAlgorithmsDD.h
+            │   │   │   │   ├── CentralEndpointIntersector.h
+            │   │   │   │   ├── Centroid.h
+            │   │   │   │   ├── ConvexHull.h
+            │   │   │   │   ├── Distance.h
+            │   │   │   │   ├── HCoordinate.h
+            │   │   │   │   ├── InteriorPointArea.h
+            │   │   │   │   ├── InteriorPointLine.h
+            │   │   │   │   ├── InteriorPointPoint.h
+            │   │   │   │   ├── Interpolate.h
+            │   │   │   │   ├── Intersection.h
+            │   │   │   │   ├── Length.h
+            │   │   │   │   ├── LineIntersector.h
+            │   │   │   │   ├── MinimumAreaRectangle.h
+            │   │   │   │   ├── MinimumBoundingCircle.h
+            │   │   │   │   ├── MinimumDiameter.h
+            │   │   │   │   ├── NotRepresentableException.h
+            │   │   │   │   ├── Orientation.h
+            │   │   │   │   ├── PointInRing.h
+            │   │   │   │   ├── PointLocation.h
+            │   │   │   │   ├── PointLocator.h
+            │   │   │   │   ├── PolygonNodeTopology.h
+            │   │   │   │   ├── RayCrossingCounter.h
+            │   │   │   │   ├── Rectangle.h
+            │   │   │   │   ├── RobustDeterminant.h
+            │   │   │   │   ├── SimplePointInRing.h
+            │   │   │   │   ├── construct
+            │   │   │   │   │   ├── LargestEmptyCircle.h
+            │   │   │   │   │   └── MaximumInscribedCircle.h
+            │   │   │   │   ├── distance
+            │   │   │   │   │   ├── DiscreteFrechetDistance.h
+            │   │   │   │   │   ├── DiscreteHausdorffDistance.h
+            │   │   │   │   │   ├── DistanceToPoint.h
+            │   │   │   │   │   └── PointPairDistance.h
+            │   │   │   │   ├── hull
+            │   │   │   │   │   ├── ConcaveHull.h
+            │   │   │   │   │   ├── ConcaveHullOfPolygons.h
+            │   │   │   │   │   ├── HullTri.h
+            │   │   │   │   │   └── HullTriangulation.h
+            │   │   │   │   └── locate
+            │   │   │   │       ├── IndexedPointInAreaLocator.h
+            │   │   │   │       ├── PointOnGeometryLocator.h
+            │   │   │   │       └── SimplePointInAreaLocator.h
+            │   │   │   ├── constants.h
+            │   │   │   ├── coverage
+            │   │   │   │   ├── Corner.h
+            │   │   │   │   ├── CoverageBoundarySegmentFinder.h
+            │   │   │   │   ├── CoverageEdge.h
+            │   │   │   │   ├── CoverageGapFinder.h
+            │   │   │   │   ├── CoveragePolygonValidator.h
+            │   │   │   │   ├── CoverageRing.h
+            │   │   │   │   ├── CoverageRingEdges.h
+            │   │   │   │   ├── CoverageSimplifier.h
+            │   │   │   │   ├── CoverageUnion.h
+            │   │   │   │   ├── CoverageValidator.h
+            │   │   │   │   ├── InvalidSegmentDetector.h
+            │   │   │   │   ├── TPVWSimplifier.h
+            │   │   │   │   └── VertexRingCounter.h
+            │   │   │   ├── edgegraph
+            │   │   │   │   ├── EdgeGraph.h
+            │   │   │   │   ├── EdgeGraphBuilder.h
+            │   │   │   │   ├── HalfEdge.h
+            │   │   │   │   └── MarkHalfEdge.h
+            │   │   │   ├── export.h
+            │   │   │   ├── geom
+            │   │   │   │   ├── Coordinate.h
+            │   │   │   │   ├── CoordinateFilter.h
+            │   │   │   │   ├── CoordinateList.h
+            │   │   │   │   ├── CoordinateSequence.h
+            │   │   │   │   ├── CoordinateSequenceFilter.h
+            │   │   │   │   ├── CoordinateSequenceIterator.h
+            │   │   │   │   ├── CoordinateSequences.h
+            │   │   │   │   ├── Dimension.h
+            │   │   │   │   ├── Envelope.h
+            │   │   │   │   ├── Geometry.h
+            │   │   │   │   ├── GeometryCollection.h
+            │   │   │   │   ├── GeometryComponentFilter.h
+            │   │   │   │   ├── GeometryFactory.h
+            │   │   │   │   ├── GeometryFilter.h
+            │   │   │   │   ├── HeuristicOverlay.h
+            │   │   │   │   ├── IntersectionMatrix.h
+            │   │   │   │   ├── LineSegment.h
+            │   │   │   │   ├── LineString.h
+            │   │   │   │   ├── LinearRing.h
+            │   │   │   │   ├── Location.h
+            │   │   │   │   ├── MultiLineString.h
+            │   │   │   │   ├── MultiPoint.h
+            │   │   │   │   ├── MultiPolygon.h
+            │   │   │   │   ├── Point.h
+            │   │   │   │   ├── Polygon.h
+            │   │   │   │   ├── Position.h
+            │   │   │   │   ├── PrecisionModel.h
+            │   │   │   │   ├── Quadrant.h
+            │   │   │   │   ├── Triangle.h
+            │   │   │   │   ├── prep
+            │   │   │   │   │   ├── AbstractPreparedPolygonContains.h
+            │   │   │   │   │   ├── BasicPreparedGeometry.h
+            │   │   │   │   │   ├── PreparedGeometry.h
+            │   │   │   │   │   ├── PreparedGeometryFactory.h
+            │   │   │   │   │   ├── PreparedLineString.h
+            │   │   │   │   │   ├── PreparedLineStringDistance.h
+            │   │   │   │   │   ├── PreparedLineStringIntersects.h
+            │   │   │   │   │   ├── PreparedLineStringNearestPoints.h
+            │   │   │   │   │   ├── PreparedPoint.h
+            │   │   │   │   │   ├── PreparedPolygon.h
+            │   │   │   │   │   ├── PreparedPolygonContains.h
+            │   │   │   │   │   ├── PreparedPolygonContainsProperly.h
+            │   │   │   │   │   ├── PreparedPolygonCovers.h
+            │   │   │   │   │   ├── PreparedPolygonDistance.h
+            │   │   │   │   │   ├── PreparedPolygonIntersects.h
+            │   │   │   │   │   └── PreparedPolygonPredicate.h
+            │   │   │   │   └── util
+            │   │   │   │       ├── ComponentCoordinateExtracter.h
+            │   │   │   │       ├── CoordinateOperation.h
+            │   │   │   │       ├── Densifier.h
+            │   │   │   │       ├── GeometryCombiner.h
+            │   │   │   │       ├── GeometryEditor.h
+            │   │   │   │       ├── GeometryEditorOperation.h
+            │   │   │   │       ├── GeometryExtracter.h
+            │   │   │   │       ├── GeometryFixer.h
+            │   │   │   │       ├── GeometryMapper.h
+            │   │   │   │       ├── GeometryTransformer.h
+            │   │   │   │       ├── LinearComponentExtracter.h
+            │   │   │   │       ├── NoOpGeometryOperation.h
+            │   │   │   │       ├── PointExtracter.h
+            │   │   │   │       ├── PolygonExtracter.h
+            │   │   │   │       ├── ShortCircuitedGeometryVisitor.h
+            │   │   │   │       └── SineStarFactory.h
+            │   │   │   ├── geom.h
+            │   │   │   ├── geomgraph
+            │   │   │   │   ├── Depth.h
+            │   │   │   │   ├── DirectedEdge.h
+            │   │   │   │   ├── DirectedEdgeStar.h
+            │   │   │   │   ├── Edge.h
+            │   │   │   │   ├── EdgeEnd.h
+            │   │   │   │   ├── EdgeEndStar.h
+            │   │   │   │   ├── EdgeIntersection.h
+            │   │   │   │   ├── EdgeIntersectionList.h
+            │   │   │   │   ├── EdgeList.h
+            │   │   │   │   ├── EdgeNodingValidator.h
+            │   │   │   │   ├── EdgeRing.h
+            │   │   │   │   ├── GeometryGraph.h
+            │   │   │   │   ├── GraphComponent.h
+            │   │   │   │   ├── Label.h
+            │   │   │   │   ├── Node.h
+            │   │   │   │   ├── NodeFactory.h
+            │   │   │   │   ├── NodeMap.h
+            │   │   │   │   ├── PlanarGraph.h
+            │   │   │   │   ├── TopologyLocation.h
+            │   │   │   │   └── index
+            │   │   │   │       ├── EdgeSetIntersector.h
+            │   │   │   │       ├── MonotoneChain.h
+            │   │   │   │       ├── MonotoneChainEdge.h
+            │   │   │   │       ├── MonotoneChainIndexer.h
+            │   │   │   │       ├── SegmentIntersector.h
+            │   │   │   │       ├── SimpleEdgeSetIntersector.h
+            │   │   │   │       ├── SimpleMCSweepLineIntersector.h
+            │   │   │   │       ├── SimpleSweepLineIntersector.h
+            │   │   │   │       ├── SweepLineEvent.h
+            │   │   │   │       ├── SweepLineEventObj.h
+            │   │   │   │       └── SweepLineSegment.h
+            │   │   │   ├── index
+            │   │   │   │   ├── ItemVisitor.h
+            │   │   │   │   ├── SpatialIndex.h
+            │   │   │   │   ├── VertexSequencePackedRtree.h
+            │   │   │   │   ├── bintree
+            │   │   │   │   │   ├── Bintree.h
+            │   │   │   │   │   ├── Interval.h
+            │   │   │   │   │   ├── Key.h
+            │   │   │   │   │   ├── Node.h
+            │   │   │   │   │   ├── NodeBase.h
+            │   │   │   │   │   └── Root.h
+            │   │   │   │   ├── chain
+            │   │   │   │   │   ├── MonotoneChain.h
+            │   │   │   │   │   ├── MonotoneChainBuilder.h
+            │   │   │   │   │   ├── MonotoneChainOverlapAction.h
+            │   │   │   │   │   └── MonotoneChainSelectAction.h
+            │   │   │   │   ├── intervalrtree
+            │   │   │   │   │   ├── IntervalRTreeBranchNode.h
+            │   │   │   │   │   ├── IntervalRTreeLeafNode.h
+            │   │   │   │   │   ├── IntervalRTreeNode.h
+            │   │   │   │   │   └── SortedPackedIntervalRTree.h
+            │   │   │   │   ├── kdtree
+            │   │   │   │   │   ├── KdNode.h
+            │   │   │   │   │   ├── KdNodeVisitor.h
+            │   │   │   │   │   └── KdTree.h
+            │   │   │   │   ├── quadtree
+            │   │   │   │   │   ├── IntervalSize.h
+            │   │   │   │   │   ├── Key.h
+            │   │   │   │   │   ├── Node.h
+            │   │   │   │   │   ├── NodeBase.h
+            │   │   │   │   │   ├── Quadtree.h
+            │   │   │   │   │   └── Root.h
+            │   │   │   │   ├── strtree
+            │   │   │   │   │   ├── AbstractNode.h
+            │   │   │   │   │   ├── AbstractSTRtree.h
+            │   │   │   │   │   ├── Boundable.h
+            │   │   │   │   │   ├── BoundablePair.h
+            │   │   │   │   │   ├── EnvelopeUtil.h
+            │   │   │   │   │   ├── GeometryItemDistance.h
+            │   │   │   │   │   ├── Interval.h
+            │   │   │   │   │   ├── ItemBoundable.h
+            │   │   │   │   │   ├── ItemDistance.h
+            │   │   │   │   │   ├── SIRtree.h
+            │   │   │   │   │   ├── STRtree.h
+            │   │   │   │   │   ├── SimpleSTRdistance.h
+            │   │   │   │   │   ├── SimpleSTRnode.h
+            │   │   │   │   │   ├── SimpleSTRtree.h
+            │   │   │   │   │   ├── TemplateSTRNode.h
+            │   │   │   │   │   ├── TemplateSTRNodePair.h
+            │   │   │   │   │   ├── TemplateSTRtree.h
+            │   │   │   │   │   └── TemplateSTRtreeDistance.h
+            │   │   │   │   └── sweepline
+            │   │   │   │       ├── SweepLineEvent.h
+            │   │   │   │       ├── SweepLineIndex.h
+            │   │   │   │       ├── SweepLineInterval.h
+            │   │   │   │       └── SweepLineOverlapAction.h
+            │   │   │   ├── io
+            │   │   │   │   ├── ByteOrderDataInStream.h
+            │   │   │   │   ├── ByteOrderValues.h
+            │   │   │   │   ├── CLocalizer.h
+            │   │   │   │   ├── CheckOrdinatesFilter.h
+            │   │   │   │   ├── GeoJSON.h
+            │   │   │   │   ├── GeoJSONReader.h
+            │   │   │   │   ├── GeoJSONWriter.h
+            │   │   │   │   ├── OrdinateSet.h
+            │   │   │   │   ├── ParseException.h
+            │   │   │   │   ├── StringTokenizer.h
+            │   │   │   │   ├── WKBConstants.h
+            │   │   │   │   ├── WKBReader.h
+            │   │   │   │   ├── WKBStreamReader.h
+            │   │   │   │   ├── WKBWriter.h
+            │   │   │   │   ├── WKTFileReader.h
+            │   │   │   │   ├── WKTReader.h
+            │   │   │   │   ├── WKTStreamReader.h
+            │   │   │   │   ├── WKTWriter.h
+            │   │   │   │   └── Writer.h
+            │   │   │   ├── linearref
+            │   │   │   │   ├── ExtractLineByLocation.h
+            │   │   │   │   ├── LengthIndexOfPoint.h
+            │   │   │   │   ├── LengthIndexedLine.h
+            │   │   │   │   ├── LengthLocationMap.h
+            │   │   │   │   ├── LinearGeometryBuilder.h
+            │   │   │   │   ├── LinearIterator.h
+            │   │   │   │   ├── LinearLocation.h
+            │   │   │   │   ├── LocationIndexOfLine.h
+            │   │   │   │   ├── LocationIndexOfPoint.h
+            │   │   │   │   └── LocationIndexedLine.h
+            │   │   │   ├── math
+            │   │   │   │   └── DD.h
+            │   │   │   ├── namespaces.h
+            │   │   │   ├── noding
+            │   │   │   │   ├── BasicSegmentString.h
+            │   │   │   │   ├── BoundaryChainNoder.h
+            │   │   │   │   ├── FastNodingValidator.h
+            │   │   │   │   ├── FastSegmentSetIntersectionFinder.h
+            │   │   │   │   ├── GeometryNoder.h
+            │   │   │   │   ├── IntersectionAdder.h
+            │   │   │   │   ├── IntersectionFinderAdder.h
+            │   │   │   │   ├── IteratedNoder.h
+            │   │   │   │   ├── MCIndexNoder.h
+            │   │   │   │   ├── MCIndexSegmentSetMutualIntersector.h
+            │   │   │   │   ├── NodableSegmentString.h
+            │   │   │   │   ├── NodedSegmentString.h
+            │   │   │   │   ├── Noder.h
+            │   │   │   │   ├── NodingIntersectionFinder.h
+            │   │   │   │   ├── NodingValidator.h
+            │   │   │   │   ├── Octant.h
+            │   │   │   │   ├── OrientedCoordinateArray.h
+            │   │   │   │   ├── ScaledNoder.h
+            │   │   │   │   ├── SegmentExtractingNoder.h
+            │   │   │   │   ├── SegmentIntersectionDetector.h
+            │   │   │   │   ├── SegmentIntersector.h
+            │   │   │   │   ├── SegmentNode.h
+            │   │   │   │   ├── SegmentNodeList.h
+            │   │   │   │   ├── SegmentPointComparator.h
+            │   │   │   │   ├── SegmentSetMutualIntersector.h
+            │   │   │   │   ├── SegmentString.h
+            │   │   │   │   ├── SegmentStringUtil.h
+            │   │   │   │   ├── SimpleNoder.h
+            │   │   │   │   ├── SinglePassNoder.h
+            │   │   │   │   ├── ValidatingNoder.h
+            │   │   │   │   ├── snap
+            │   │   │   │   │   ├── SnappingIntersectionAdder.h
+            │   │   │   │   │   ├── SnappingNoder.h
+            │   │   │   │   │   └── SnappingPointIndex.h
+            │   │   │   │   └── snapround
+            │   │   │   │       ├── HotPixel.h
+            │   │   │   │       ├── HotPixelIndex.h
+            │   │   │   │       ├── MCIndexPointSnapper.h
+            │   │   │   │       ├── MCIndexSnapRounder.h
+            │   │   │   │       ├── SnapRoundingIntersectionAdder.h
+            │   │   │   │       └── SnapRoundingNoder.h
+            │   │   │   ├── operation
+            │   │   │   │   ├── BoundaryOp.h
+            │   │   │   │   ├── GeometryGraphOperation.h
+            │   │   │   │   ├── buffer
+            │   │   │   │   │   ├── BufferBuilder.h
+            │   │   │   │   │   ├── BufferCurveSetBuilder.h
+            │   │   │   │   │   ├── BufferInputLineSimplifier.h
+            │   │   │   │   │   ├── BufferOp.h
+            │   │   │   │   │   ├── BufferParameters.h
+            │   │   │   │   │   ├── BufferSubgraph.h
+            │   │   │   │   │   ├── OffsetCurve.h
+            │   │   │   │   │   ├── OffsetCurveBuilder.h
+            │   │   │   │   │   ├── OffsetCurveSection.h
+            │   │   │   │   │   ├── OffsetSegmentGenerator.h
+            │   │   │   │   │   ├── OffsetSegmentString.h
+            │   │   │   │   │   ├── RightmostEdgeFinder.h
+            │   │   │   │   │   ├── SegmentMCIndex.h
+            │   │   │   │   │   └── SubgraphDepthLocater.h
+            │   │   │   │   ├── cluster
+            │   │   │   │   │   ├── AbstractClusterFinder.h
+            │   │   │   │   │   ├── Clusters.h
+            │   │   │   │   │   ├── DBSCANClusterFinder.h
+            │   │   │   │   │   ├── DisjointOperation.h
+            │   │   │   │   │   ├── EnvelopeDistanceClusterFinder.h
+            │   │   │   │   │   ├── EnvelopeIntersectsClusterFinder.h
+            │   │   │   │   │   ├── GeometryDistanceClusterFinder.h
+            │   │   │   │   │   ├── GeometryFlattener.h
+            │   │   │   │   │   ├── GeometryIntersectsClusterFinder.h
+            │   │   │   │   │   └── UnionFind.h
+            │   │   │   │   ├── distance
+            │   │   │   │   │   ├── ConnectedElementLocationFilter.h
+            │   │   │   │   │   ├── ConnectedElementPointFilter.h
+            │   │   │   │   │   ├── DistanceOp.h
+            │   │   │   │   │   ├── FacetSequence.h
+            │   │   │   │   │   ├── FacetSequenceTreeBuilder.h
+            │   │   │   │   │   ├── GeometryLocation.h
+            │   │   │   │   │   └── IndexedFacetDistance.h
+            │   │   │   │   ├── intersection
+            │   │   │   │   │   ├── Rectangle.h
+            │   │   │   │   │   ├── RectangleIntersection.h
+            │   │   │   │   │   └── RectangleIntersectionBuilder.h
+            │   │   │   │   ├── linemerge
+            │   │   │   │   │   ├── EdgeString.h
+            │   │   │   │   │   ├── LineMergeDirectedEdge.h
+            │   │   │   │   │   ├── LineMergeEdge.h
+            │   │   │   │   │   ├── LineMergeGraph.h
+            │   │   │   │   │   ├── LineMerger.h
+            │   │   │   │   │   └── LineSequencer.h
+            │   │   │   │   ├── overlay
+            │   │   │   │   │   ├── MaximalEdgeRing.h
+            │   │   │   │   │   ├── MinimalEdgeRing.h
+            │   │   │   │   │   ├── OverlayNodeFactory.h
+            │   │   │   │   │   ├── PolygonBuilder.h
+            │   │   │   │   │   ├── snap
+            │   │   │   │   │   │   ├── GeometrySnapper.h
+            │   │   │   │   │   │   ├── LineStringSnapper.h
+            │   │   │   │   │   │   └── SnapOverlayOp.h
+            │   │   │   │   │   └── validate
+            │   │   │   │   │       ├── FuzzyPointLocator.h
+            │   │   │   │   │       ├── OffsetPointGenerator.h
+            │   │   │   │   │       └── OverlayResultValidator.h
+            │   │   │   │   ├── overlayng
+            │   │   │   │   │   ├── CoverageUnion.h
+            │   │   │   │   │   ├── Edge.h
+            │   │   │   │   │   ├── EdgeKey.h
+            │   │   │   │   │   ├── EdgeMerger.h
+            │   │   │   │   │   ├── EdgeNodingBuilder.h
+            │   │   │   │   │   ├── EdgeSourceInfo.h
+            │   │   │   │   │   ├── ElevationModel.h
+            │   │   │   │   │   ├── IndexedPointOnLineLocator.h
+            │   │   │   │   │   ├── InputGeometry.h
+            │   │   │   │   │   ├── IntersectionPointBuilder.h
+            │   │   │   │   │   ├── LineBuilder.h
+            │   │   │   │   │   ├── LineLimiter.h
+            │   │   │   │   │   ├── MaximalEdgeRing.h
+            │   │   │   │   │   ├── OverlayEdge.h
+            │   │   │   │   │   ├── OverlayEdgeRing.h
+            │   │   │   │   │   ├── OverlayGraph.h
+            │   │   │   │   │   ├── OverlayLabel.h
+            │   │   │   │   │   ├── OverlayLabeller.h
+            │   │   │   │   │   ├── OverlayMixedPoints.h
+            │   │   │   │   │   ├── OverlayNG.h
+            │   │   │   │   │   ├── OverlayNGRobust.h
+            │   │   │   │   │   ├── OverlayPoints.h
+            │   │   │   │   │   ├── OverlayUtil.h
+            │   │   │   │   │   ├── PolygonBuilder.h
+            │   │   │   │   │   ├── PrecisionReducer.h
+            │   │   │   │   │   ├── PrecisionUtil.h
+            │   │   │   │   │   ├── RingClipper.h
+            │   │   │   │   │   ├── RobustClipEnvelopeComputer.h
+            │   │   │   │   │   └── UnaryUnionNG.h
+            │   │   │   │   ├── polygonize
+            │   │   │   │   │   ├── BuildArea.h
+            │   │   │   │   │   ├── EdgeRing.h
+            │   │   │   │   │   ├── HoleAssigner.h
+            │   │   │   │   │   ├── PolygonizeDirectedEdge.h
+            │   │   │   │   │   ├── PolygonizeEdge.h
+            │   │   │   │   │   ├── PolygonizeGraph.h
+            │   │   │   │   │   └── Polygonizer.h
+            │   │   │   │   ├── predicate
+            │   │   │   │   │   ├── RectangleContains.h
+            │   │   │   │   │   ├── RectangleIntersects.h
+            │   │   │   │   │   └── SegmentIntersectionTester.h
+            │   │   │   │   ├── relate
+            │   │   │   │   │   ├── EdgeEndBuilder.h
+            │   │   │   │   │   ├── EdgeEndBundle.h
+            │   │   │   │   │   ├── EdgeEndBundleStar.h
+            │   │   │   │   │   ├── RelateComputer.h
+            │   │   │   │   │   ├── RelateNode.h
+            │   │   │   │   │   ├── RelateNodeFactory.h
+            │   │   │   │   │   ├── RelateNodeGraph.h
+            │   │   │   │   │   └── RelateOp.h
+            │   │   │   │   ├── sharedpaths
+            │   │   │   │   │   └── SharedPathsOp.h
+            │   │   │   │   ├── union
+            │   │   │   │   │   ├── CascadedPolygonUnion.h
+            │   │   │   │   │   ├── CoverageUnion.h
+            │   │   │   │   │   ├── DisjointSubsetUnion.h
+            │   │   │   │   │   ├── OverlapUnion.h
+            │   │   │   │   │   ├── PointGeometryUnion.h
+            │   │   │   │   │   ├── UnaryUnionOp.h
+            │   │   │   │   │   └── UnionStrategy.h
+            │   │   │   │   └── valid
+            │   │   │   │       ├── ConsistentAreaTester.h
+            │   │   │   │       ├── IndexedNestedHoleTester.h
+            │   │   │   │       ├── IndexedNestedPolygonTester.h
+            │   │   │   │       ├── IsSimpleOp.h
+            │   │   │   │       ├── IsValidOp.h
+            │   │   │   │       ├── MakeValid.h
+            │   │   │   │       ├── PolygonIntersectionAnalyzer.h
+            │   │   │   │       ├── PolygonRing.h
+            │   │   │   │       ├── PolygonRingSelfNode.h
+            │   │   │   │       ├── PolygonRingTouch.h
+            │   │   │   │       ├── PolygonTopologyAnalyzer.h
+            │   │   │   │       ├── RepeatedPointRemover.h
+            │   │   │   │       ├── RepeatedPointTester.h
+            │   │   │   │       └── TopologyValidationError.h
+            │   │   │   ├── planargraph
+            │   │   │   │   ├── DirectedEdge.h
+            │   │   │   │   ├── DirectedEdgeStar.h
+            │   │   │   │   ├── Edge.h
+            │   │   │   │   ├── GraphComponent.h
+            │   │   │   │   ├── Node.h
+            │   │   │   │   ├── NodeMap.h
+            │   │   │   │   ├── PlanarGraph.h
+            │   │   │   │   ├── Subgraph.h
+            │   │   │   │   └── algorithm
+            │   │   │   │       └── ConnectedSubgraphFinder.h
+            │   │   │   ├── precision
+            │   │   │   │   ├── CommonBits.h
+            │   │   │   │   ├── CommonBitsOp.h
+            │   │   │   │   ├── CommonBitsRemover.h
+            │   │   │   │   ├── EnhancedPrecisionOp.h
+            │   │   │   │   ├── GeometryPrecisionReducer.h
+            │   │   │   │   ├── MinimumClearance.h
+            │   │   │   │   ├── PointwisePrecisionReducerTransformer.h
+            │   │   │   │   ├── PrecisionReducerCoordinateOperation.h
+            │   │   │   │   ├── PrecisionReducerTransformer.h
+            │   │   │   │   └── SimpleGeometryPrecisionReducer.h
+            │   │   │   ├── profiler.h
+            │   │   │   ├── shape
+            │   │   │   │   └── fractal
+            │   │   │   │       ├── HilbertCode.h
+            │   │   │   │       ├── HilbertEncoder.h
+            │   │   │   │       └── MortonCode.h
+            │   │   │   ├── simplify
+            │   │   │   │   ├── DouglasPeuckerLineSimplifier.h
+            │   │   │   │   ├── DouglasPeuckerSimplifier.h
+            │   │   │   │   ├── LineSegmentIndex.h
+            │   │   │   │   ├── LinkedLine.h
+            │   │   │   │   ├── LinkedRing.h
+            │   │   │   │   ├── PolygonHullSimplifier.h
+            │   │   │   │   ├── RingHull.h
+            │   │   │   │   ├── RingHullIndex.h
+            │   │   │   │   ├── TaggedLineSegment.h
+            │   │   │   │   ├── TaggedLineString.h
+            │   │   │   │   ├── TaggedLineStringSimplifier.h
+            │   │   │   │   ├── TaggedLinesSimplifier.h
+            │   │   │   │   └── TopologyPreservingSimplifier.h
+            │   │   │   ├── triangulate
+            │   │   │   │   ├── DelaunayTriangulationBuilder.h
+            │   │   │   │   ├── IncrementalDelaunayTriangulator.h
+            │   │   │   │   ├── VoronoiDiagramBuilder.h
+            │   │   │   │   ├── polygon
+            │   │   │   │   │   ├── ConstrainedDelaunayTriangulator.h
+            │   │   │   │   │   ├── PolygonEarClipper.h
+            │   │   │   │   │   ├── PolygonHoleJoiner.h
+            │   │   │   │   │   ├── PolygonNoder.h
+            │   │   │   │   │   ├── PolygonTriangulator.h
+            │   │   │   │   │   └── TriDelaunayImprover.h
+            │   │   │   │   ├── quadedge
+            │   │   │   │   │   ├── LastFoundQuadEdgeLocator.h
+            │   │   │   │   │   ├── LocateFailureException.h
+            │   │   │   │   │   ├── QuadEdge.h
+            │   │   │   │   │   ├── QuadEdgeLocator.h
+            │   │   │   │   │   ├── QuadEdgeQuartet.h
+            │   │   │   │   │   ├── QuadEdgeSubdivision.h
+            │   │   │   │   │   ├── TrianglePredicate.h
+            │   │   │   │   │   ├── TriangleVisitor.h
+            │   │   │   │   │   └── Vertex.h
+            │   │   │   │   └── tri
+            │   │   │   │       ├── Tri.h
+            │   │   │   │       ├── TriEdge.h
+            │   │   │   │       ├── TriList.h
+            │   │   │   │       └── TriangulationBuilder.h
+            │   │   │   ├── unload.h
+            │   │   │   ├── util
+            │   │   │   │   ├── Assert.h
+            │   │   │   │   ├── AssertionFailedException.h
+            │   │   │   │   ├── CoordinateArrayFilter.h
+            │   │   │   │   ├── GEOSException.h
+            │   │   │   │   ├── GeometricShapeFactory.h
+            │   │   │   │   ├── IllegalArgumentException.h
+            │   │   │   │   ├── IllegalStateException.h
+            │   │   │   │   ├── Interrupt.h
+            │   │   │   │   ├── Machine.h
+            │   │   │   │   ├── TopologyException.h
+            │   │   │   │   ├── UniqueCoordinateArrayFilter.h
+            │   │   │   │   ├── UnsupportedOperationException.h
+            │   │   │   │   ├── math.h
+            │   │   │   │   └── string.h
+            │   │   │   ├── util.h
+            │   │   │   ├── vend
+            │   │   │   │   ├── include_nlohmann_json.hpp
+            │   │   │   │   └── json.hpp
+            │   │   │   └── version.h
+            │   │   ├── geos.h
+            │   │   ├── geos_c.h
+            │   │   ├── librttopo.h
+            │   │   ├── librttopo_geom.h
+            │   │   ├── proj
+            │   │   │   ├── common.hpp
+            │   │   │   ├── coordinateoperation.hpp
+            │   │   │   ├── coordinates.hpp
+            │   │   │   ├── coordinatesystem.hpp
+            │   │   │   ├── crs.hpp
+            │   │   │   ├── datum.hpp
+            │   │   │   ├── io.hpp
+            │   │   │   ├── metadata.hpp
+            │   │   │   ├── nn.hpp
+            │   │   │   └── util.hpp
+            │   │   ├── proj.h
+            │   │   ├── proj_constants.h
+            │   │   ├── proj_experimental.h
+            │   │   ├── proj_symbol_rename.h
+            │   │   ├── spatialite
+            │   │   │   ├── control_points.h
+            │   │   │   ├── debug.h
+            │   │   │   ├── gaia_network.h
+            │   │   │   ├── gaia_topology.h
+            │   │   │   ├── gaiaaux.h
+            │   │   │   ├── gaiaconfig-msvc.h
+            │   │   │   ├── gaiaconfig-msvc.h.in
+            │   │   │   ├── gaiaconfig.h
+            │   │   │   ├── gaiaconfig.h.in
+            │   │   │   ├── gaiaexif.h
+            │   │   │   ├── gaiageo.h
+            │   │   │   ├── gaiamatrix.h
+            │   │   │   ├── geojson.h
+            │   │   │   ├── geopackage.h
+            │   │   │   ├── gg_advanced.h
+            │   │   │   ├── gg_const.h
+            │   │   │   ├── gg_core.h
+            │   │   │   ├── gg_dxf.h
+            │   │   │   ├── gg_dynamic.h
+            │   │   │   ├── gg_formats.h
+            │   │   │   ├── gg_mbr.h
+            │   │   │   ├── gg_sequence.h
+            │   │   │   ├── gg_structs.h
+            │   │   │   ├── gg_wfs.h
+            │   │   │   ├── gg_xml.h
+            │   │   │   ├── spatialite_ext.h
+            │   │   │   ├── sqlite.h
+            │   │   │   └── stored_procedures.h
+            │   │   ├── spatialite.h
+            │   │   ├── sqlite3.h
+            │   │   ├── sqlite3ext.h
+            │   │   └── unicode
+            │   │       ├── alphaindex.h
+            │   │       ├── appendable.h
+            │   │       ├── basictz.h
+            │   │       ├── brkiter.h
+            │   │       ├── bytestream.h
+            │   │       ├── bytestrie.h
+            │   │       ├── bytestriebuilder.h
+            │   │       ├── calendar.h
+            │   │       ├── caniter.h
+            │   │       ├── casemap.h
+            │   │       ├── char16ptr.h
+            │   │       ├── chariter.h
+            │   │       ├── choicfmt.h
+            │   │       ├── coleitr.h
+            │   │       ├── coll.h
+            │   │       ├── compactdecimalformat.h
+            │   │       ├── curramt.h
+            │   │       ├── currpinf.h
+            │   │       ├── currunit.h
+            │   │       ├── datefmt.h
+            │   │       ├── dbbi.h
+            │   │       ├── dcfmtsym.h
+            │   │       ├── decimfmt.h
+            │   │       ├── displayoptions.h
+            │   │       ├── docmain.h
+            │   │       ├── dtfmtsym.h
+            │   │       ├── dtintrv.h
+            │   │       ├── dtitvfmt.h
+            │   │       ├── dtitvinf.h
+            │   │       ├── dtptngen.h
+            │   │       ├── dtrule.h
+            │   │       ├── edits.h
+            │   │       ├── enumset.h
+            │   │       ├── errorcode.h
+            │   │       ├── fieldpos.h
+            │   │       ├── filteredbrk.h
+            │   │       ├── fmtable.h
+            │   │       ├── format.h
+            │   │       ├── formattednumber.h
+            │   │       ├── formattedvalue.h
+            │   │       ├── fpositer.h
+            │   │       ├── gender.h
+            │   │       ├── gregocal.h
+            │   │       ├── icudataver.h
+            │   │       ├── icuplug.h
+            │   │       ├── idna.h
+            │   │       ├── listformatter.h
+            │   │       ├── localebuilder.h
+            │   │       ├── localematcher.h
+            │   │       ├── localpointer.h
+            │   │       ├── locdspnm.h
+            │   │       ├── locid.h
+            │   │       ├── measfmt.h
+            │   │       ├── measunit.h
+            │   │       ├── measure.h
+            │   │       ├── messagepattern.h
+            │   │       ├── msgfmt.h
+            │   │       ├── normalizer2.h
+            │   │       ├── normlzr.h
+            │   │       ├── nounit.h
+            │   │       ├── numberformatter.h
+            │   │       ├── numberrangeformatter.h
+            │   │       ├── numfmt.h
+            │   │       ├── numsys.h
+            │   │       ├── parseerr.h
+            │   │       ├── parsepos.h
+            │   │       ├── platform.h
+            │   │       ├── plurfmt.h
+            │   │       ├── plurrule.h
+            │   │       ├── ptypes.h
+            │   │       ├── putil.h
+            │   │       ├── rbbi.h
+            │   │       ├── rbnf.h
+            │   │       ├── rbtz.h
+            │   │       ├── regex.h
+            │   │       ├── region.h
+            │   │       ├── reldatefmt.h
+            │   │       ├── rep.h
+            │   │       ├── resbund.h
+            │   │       ├── schriter.h
+            │   │       ├── scientificnumberformatter.h
+            │   │       ├── search.h
+            │   │       ├── selfmt.h
+            │   │       ├── simpleformatter.h
+            │   │       ├── simplenumberformatter.h
+            │   │       ├── simpletz.h
+            │   │       ├── smpdtfmt.h
+            │   │       ├── sortkey.h
+            │   │       ├── std_string.h
+            │   │       ├── strenum.h
+            │   │       ├── stringoptions.h
+            │   │       ├── stringpiece.h
+            │   │       ├── stringtriebuilder.h
+            │   │       ├── stsearch.h
+            │   │       ├── symtable.h
+            │   │       ├── tblcoll.h
+            │   │       ├── timezone.h
+            │   │       ├── tmunit.h
+            │   │       ├── tmutamt.h
+            │   │       ├── tmutfmt.h
+            │   │       ├── translit.h
+            │   │       ├── tzfmt.h
+            │   │       ├── tznames.h
+            │   │       ├── tzrule.h
+            │   │       ├── tztrans.h
+            │   │       ├── ubidi.h
+            │   │       ├── ubiditransform.h
+            │   │       ├── ubrk.h
+            │   │       ├── ucal.h
+            │   │       ├── ucasemap.h
+            │   │       ├── ucat.h
+            │   │       ├── uchar.h
+            │   │       ├── ucharstrie.h
+            │   │       ├── ucharstriebuilder.h
+            │   │       ├── uchriter.h
+            │   │       ├── uclean.h
+            │   │       ├── ucnv.h
+            │   │       ├── ucnv_cb.h
+            │   │       ├── ucnv_err.h
+            │   │       ├── ucnvsel.h
+            │   │       ├── ucol.h
+            │   │       ├── ucoleitr.h
+            │   │       ├── uconfig.h
+            │   │       ├── ucpmap.h
+            │   │       ├── ucptrie.h
+            │   │       ├── ucsdet.h
+            │   │       ├── ucurr.h
+            │   │       ├── udat.h
+            │   │       ├── udata.h
+            │   │       ├── udateintervalformat.h
+            │   │       ├── udatpg.h
+            │   │       ├── udisplaycontext.h
+            │   │       ├── udisplayoptions.h
+            │   │       ├── uenum.h
+            │   │       ├── ufieldpositer.h
+            │   │       ├── uformattable.h
+            │   │       ├── uformattednumber.h
+            │   │       ├── uformattedvalue.h
+            │   │       ├── ugender.h
+            │   │       ├── uidna.h
+            │   │       ├── uiter.h
+            │   │       ├── uldnames.h
+            │   │       ├── ulistformatter.h
+            │   │       ├── uloc.h
+            │   │       ├── ulocdata.h
+            │   │       ├── umachine.h
+            │   │       ├── umisc.h
+            │   │       ├── umsg.h
+            │   │       ├── umutablecptrie.h
+            │   │       ├── unifilt.h
+            │   │       ├── unifunct.h
+            │   │       ├── unimatch.h
+            │   │       ├── unirepl.h
+            │   │       ├── uniset.h
+            │   │       ├── unistr.h
+            │   │       ├── unorm.h
+            │   │       ├── unorm2.h
+            │   │       ├── unum.h
+            │   │       ├── unumberformatter.h
+            │   │       ├── unumberoptions.h
+            │   │       ├── unumberrangeformatter.h
+            │   │       ├── unumsys.h
+            │   │       ├── uobject.h
+            │   │       ├── upluralrules.h
+            │   │       ├── uregex.h
+            │   │       ├── uregion.h
+            │   │       ├── ureldatefmt.h
+            │   │       ├── urename.h
+            │   │       ├── urep.h
+            │   │       ├── ures.h
+            │   │       ├── uscript.h
+            │   │       ├── usearch.h
+            │   │       ├── uset.h
+            │   │       ├── usetiter.h
+            │   │       ├── ushape.h
+            │   │       ├── usimplenumberformatter.h
+            │   │       ├── uspoof.h
+            │   │       ├── usprep.h
+            │   │       ├── ustring.h
+            │   │       ├── ustringtrie.h
+            │   │       ├── utext.h
+            │   │       ├── utf.h
+            │   │       ├── utf16.h
+            │   │       ├── utf32.h
+            │   │       ├── utf8.h
+            │   │       ├── utf_old.h
+            │   │       ├── utmscale.h
+            │   │       ├── utrace.h
+            │   │       ├── utrans.h
+            │   │       ├── utypes.h
+            │   │       ├── uvernum.h
+            │   │       ├── uversion.h
+            │   │       └── vtzone.h
+            │   └── libspatialiteall.a
+            └── ios-arm64-simulator
+                ├── Headers
+                │   ├── geodesic.h
+                │   ├── geos
+                │   │   ├── algorithm
+                │   │   │   ├── Angle.h
+                │   │   │   ├── Area.h
+                │   │   │   ├── BoundaryNodeRule.h
+                │   │   │   ├── CGAlgorithmsDD.h
+                │   │   │   ├── CentralEndpointIntersector.h
+                │   │   │   ├── Centroid.h
+                │   │   │   ├── ConvexHull.h
+                │   │   │   ├── Distance.h
+                │   │   │   ├── HCoordinate.h
+                │   │   │   ├── InteriorPointArea.h
+                │   │   │   ├── InteriorPointLine.h
+                │   │   │   ├── InteriorPointPoint.h
+                │   │   │   ├── Interpolate.h
+                │   │   │   ├── Intersection.h
+                │   │   │   ├── Length.h
+                │   │   │   ├── LineIntersector.h
+                │   │   │   ├── MinimumAreaRectangle.h
+                │   │   │   ├── MinimumBoundingCircle.h
+                │   │   │   ├── MinimumDiameter.h
+                │   │   │   ├── NotRepresentableException.h
+                │   │   │   ├── Orientation.h
+                │   │   │   ├── PointInRing.h
+                │   │   │   ├── PointLocation.h
+                │   │   │   ├── PointLocator.h
+                │   │   │   ├── PolygonNodeTopology.h
+                │   │   │   ├── RayCrossingCounter.h
+                │   │   │   ├── Rectangle.h
+                │   │   │   ├── RobustDeterminant.h
+                │   │   │   ├── SimplePointInRing.h
+                │   │   │   ├── construct
+                │   │   │   │   ├── LargestEmptyCircle.h
+                │   │   │   │   └── MaximumInscribedCircle.h
+                │   │   │   ├── distance
+                │   │   │   │   ├── DiscreteFrechetDistance.h
+                │   │   │   │   ├── DiscreteHausdorffDistance.h
+                │   │   │   │   ├── DistanceToPoint.h
+                │   │   │   │   └── PointPairDistance.h
+                │   │   │   ├── hull
+                │   │   │   │   ├── ConcaveHull.h
+                │   │   │   │   ├── ConcaveHullOfPolygons.h
+                │   │   │   │   ├── HullTri.h
+                │   │   │   │   └── HullTriangulation.h
+                │   │   │   └── locate
+                │   │   │       ├── IndexedPointInAreaLocator.h
+                │   │   │       ├── PointOnGeometryLocator.h
+                │   │   │       └── SimplePointInAreaLocator.h
+                │   │   ├── constants.h
+                │   │   ├── coverage
+                │   │   │   ├── Corner.h
+                │   │   │   ├── CoverageBoundarySegmentFinder.h
+                │   │   │   ├── CoverageEdge.h
+                │   │   │   ├── CoverageGapFinder.h
+                │   │   │   ├── CoveragePolygonValidator.h
+                │   │   │   ├── CoverageRing.h
+                │   │   │   ├── CoverageRingEdges.h
+                │   │   │   ├── CoverageSimplifier.h
+                │   │   │   ├── CoverageUnion.h
+                │   │   │   ├── CoverageValidator.h
+                │   │   │   ├── InvalidSegmentDetector.h
+                │   │   │   ├── TPVWSimplifier.h
+                │   │   │   └── VertexRingCounter.h
+                │   │   ├── edgegraph
+                │   │   │   ├── EdgeGraph.h
+                │   │   │   ├── EdgeGraphBuilder.h
+                │   │   │   ├── HalfEdge.h
+                │   │   │   └── MarkHalfEdge.h
+                │   │   ├── export.h
+                │   │   ├── geom
+                │   │   │   ├── Coordinate.h
+                │   │   │   ├── CoordinateFilter.h
+                │   │   │   ├── CoordinateList.h
+                │   │   │   ├── CoordinateSequence.h
+                │   │   │   ├── CoordinateSequenceFilter.h
+                │   │   │   ├── CoordinateSequenceIterator.h
+                │   │   │   ├── CoordinateSequences.h
+                │   │   │   ├── Dimension.h
+                │   │   │   ├── Envelope.h
+                │   │   │   ├── Geometry.h
+                │   │   │   ├── GeometryCollection.h
+                │   │   │   ├── GeometryComponentFilter.h
+                │   │   │   ├── GeometryFactory.h
+                │   │   │   ├── GeometryFilter.h
+                │   │   │   ├── HeuristicOverlay.h
+                │   │   │   ├── IntersectionMatrix.h
+                │   │   │   ├── LineSegment.h
+                │   │   │   ├── LineString.h
+                │   │   │   ├── LinearRing.h
+                │   │   │   ├── Location.h
+                │   │   │   ├── MultiLineString.h
+                │   │   │   ├── MultiPoint.h
+                │   │   │   ├── MultiPolygon.h
+                │   │   │   ├── Point.h
+                │   │   │   ├── Polygon.h
+                │   │   │   ├── Position.h
+                │   │   │   ├── PrecisionModel.h
+                │   │   │   ├── Quadrant.h
+                │   │   │   ├── Triangle.h
+                │   │   │   ├── prep
+                │   │   │   │   ├── AbstractPreparedPolygonContains.h
+                │   │   │   │   ├── BasicPreparedGeometry.h
+                │   │   │   │   ├── PreparedGeometry.h
+                │   │   │   │   ├── PreparedGeometryFactory.h
+                │   │   │   │   ├── PreparedLineString.h
+                │   │   │   │   ├── PreparedLineStringDistance.h
+                │   │   │   │   ├── PreparedLineStringIntersects.h
+                │   │   │   │   ├── PreparedLineStringNearestPoints.h
+                │   │   │   │   ├── PreparedPoint.h
+                │   │   │   │   ├── PreparedPolygon.h
+                │   │   │   │   ├── PreparedPolygonContains.h
+                │   │   │   │   ├── PreparedPolygonContainsProperly.h
+                │   │   │   │   ├── PreparedPolygonCovers.h
+                │   │   │   │   ├── PreparedPolygonDistance.h
+                │   │   │   │   ├── PreparedPolygonIntersects.h
+                │   │   │   │   └── PreparedPolygonPredicate.h
+                │   │   │   └── util
+                │   │   │       ├── ComponentCoordinateExtracter.h
+                │   │   │       ├── CoordinateOperation.h
+                │   │   │       ├── Densifier.h
+                │   │   │       ├── GeometryCombiner.h
+                │   │   │       ├── GeometryEditor.h
+                │   │   │       ├── GeometryEditorOperation.h
+                │   │   │       ├── GeometryExtracter.h
+                │   │   │       ├── GeometryFixer.h
+                │   │   │       ├── GeometryMapper.h
+                │   │   │       ├── GeometryTransformer.h
+                │   │   │       ├── LinearComponentExtracter.h
+                │   │   │       ├── NoOpGeometryOperation.h
+                │   │   │       ├── PointExtracter.h
+                │   │   │       ├── PolygonExtracter.h
+                │   │   │       ├── ShortCircuitedGeometryVisitor.h
+                │   │   │       └── SineStarFactory.h
+                │   │   ├── geom.h
+                │   │   ├── geomgraph
+                │   │   │   ├── Depth.h
+                │   │   │   ├── DirectedEdge.h
+                │   │   │   ├── DirectedEdgeStar.h
+                │   │   │   ├── Edge.h
+                │   │   │   ├── EdgeEnd.h
+                │   │   │   ├── EdgeEndStar.h
+                │   │   │   ├── EdgeIntersection.h
+                │   │   │   ├── EdgeIntersectionList.h
+                │   │   │   ├── EdgeList.h
+                │   │   │   ├── EdgeNodingValidator.h
+                │   │   │   ├── EdgeRing.h
+                │   │   │   ├── GeometryGraph.h
+                │   │   │   ├── GraphComponent.h
+                │   │   │   ├── Label.h
+                │   │   │   ├── Node.h
+                │   │   │   ├── NodeFactory.h
+                │   │   │   ├── NodeMap.h
+                │   │   │   ├── PlanarGraph.h
+                │   │   │   ├── TopologyLocation.h
+                │   │   │   └── index
+                │   │   │       ├── EdgeSetIntersector.h
+                │   │   │       ├── MonotoneChain.h
+                │   │   │       ├── MonotoneChainEdge.h
+                │   │   │       ├── MonotoneChainIndexer.h
+                │   │   │       ├── SegmentIntersector.h
+                │   │   │       ├── SimpleEdgeSetIntersector.h
+                │   │   │       ├── SimpleMCSweepLineIntersector.h
+                │   │   │       ├── SimpleSweepLineIntersector.h
+                │   │   │       ├── SweepLineEvent.h
+                │   │   │       ├── SweepLineEventObj.h
+                │   │   │       └── SweepLineSegment.h
+                │   │   ├── index
+                │   │   │   ├── ItemVisitor.h
+                │   │   │   ├── SpatialIndex.h
+                │   │   │   ├── VertexSequencePackedRtree.h
+                │   │   │   ├── bintree
+                │   │   │   │   ├── Bintree.h
+                │   │   │   │   ├── Interval.h
+                │   │   │   │   ├── Key.h
+                │   │   │   │   ├── Node.h
+                │   │   │   │   ├── NodeBase.h
+                │   │   │   │   └── Root.h
+                │   │   │   ├── chain
+                │   │   │   │   ├── MonotoneChain.h
+                │   │   │   │   ├── MonotoneChainBuilder.h
+                │   │   │   │   ├── MonotoneChainOverlapAction.h
+                │   │   │   │   └── MonotoneChainSelectAction.h
+                │   │   │   ├── intervalrtree
+                │   │   │   │   ├── IntervalRTreeBranchNode.h
+                │   │   │   │   ├── IntervalRTreeLeafNode.h
+                │   │   │   │   ├── IntervalRTreeNode.h
+                │   │   │   │   └── SortedPackedIntervalRTree.h
+                │   │   │   ├── kdtree
+                │   │   │   │   ├── KdNode.h
+                │   │   │   │   ├── KdNodeVisitor.h
+                │   │   │   │   └── KdTree.h
+                │   │   │   ├── quadtree
+                │   │   │   │   ├── IntervalSize.h
+                │   │   │   │   ├── Key.h
+                │   │   │   │   ├── Node.h
+                │   │   │   │   ├── NodeBase.h
+                │   │   │   │   ├── Quadtree.h
+                │   │   │   │   └── Root.h
+                │   │   │   ├── strtree
+                │   │   │   │   ├── AbstractNode.h
+                │   │   │   │   ├── AbstractSTRtree.h
+                │   │   │   │   ├── Boundable.h
+                │   │   │   │   ├── BoundablePair.h
+                │   │   │   │   ├── EnvelopeUtil.h
+                │   │   │   │   ├── GeometryItemDistance.h
+                │   │   │   │   ├── Interval.h
+                │   │   │   │   ├── ItemBoundable.h
+                │   │   │   │   ├── ItemDistance.h
+                │   │   │   │   ├── SIRtree.h
+                │   │   │   │   ├── STRtree.h
+                │   │   │   │   ├── SimpleSTRdistance.h
+                │   │   │   │   ├── SimpleSTRnode.h
+                │   │   │   │   ├── SimpleSTRtree.h
+                │   │   │   │   ├── TemplateSTRNode.h
+                │   │   │   │   ├── TemplateSTRNodePair.h
+                │   │   │   │   ├── TemplateSTRtree.h
+                │   │   │   │   └── TemplateSTRtreeDistance.h
+                │   │   │   └── sweepline
+                │   │   │       ├── SweepLineEvent.h
+                │   │   │       ├── SweepLineIndex.h
+                │   │   │       ├── SweepLineInterval.h
+                │   │   │       └── SweepLineOverlapAction.h
+                │   │   ├── io
+                │   │   │   ├── ByteOrderDataInStream.h
+                │   │   │   ├── ByteOrderValues.h
+                │   │   │   ├── CLocalizer.h
+                │   │   │   ├── CheckOrdinatesFilter.h
+                │   │   │   ├── GeoJSON.h
+                │   │   │   ├── GeoJSONReader.h
+                │   │   │   ├── GeoJSONWriter.h
+                │   │   │   ├── OrdinateSet.h
+                │   │   │   ├── ParseException.h
+                │   │   │   ├── StringTokenizer.h
+                │   │   │   ├── WKBConstants.h
+                │   │   │   ├── WKBReader.h
+                │   │   │   ├── WKBStreamReader.h
+                │   │   │   ├── WKBWriter.h
+                │   │   │   ├── WKTFileReader.h
+                │   │   │   ├── WKTReader.h
+                │   │   │   ├── WKTStreamReader.h
+                │   │   │   ├── WKTWriter.h
+                │   │   │   └── Writer.h
+                │   │   ├── linearref
+                │   │   │   ├── ExtractLineByLocation.h
+                │   │   │   ├── LengthIndexOfPoint.h
+                │   │   │   ├── LengthIndexedLine.h
+                │   │   │   ├── LengthLocationMap.h
+                │   │   │   ├── LinearGeometryBuilder.h
+                │   │   │   ├── LinearIterator.h
+                │   │   │   ├── LinearLocation.h
+                │   │   │   ├── LocationIndexOfLine.h
+                │   │   │   ├── LocationIndexOfPoint.h
+                │   │   │   └── LocationIndexedLine.h
+                │   │   ├── math
+                │   │   │   └── DD.h
+                │   │   ├── namespaces.h
+                │   │   ├── noding
+                │   │   │   ├── BasicSegmentString.h
+                │   │   │   ├── BoundaryChainNoder.h
+                │   │   │   ├── FastNodingValidator.h
+                │   │   │   ├── FastSegmentSetIntersectionFinder.h
+                │   │   │   ├── GeometryNoder.h
+                │   │   │   ├── IntersectionAdder.h
+                │   │   │   ├── IntersectionFinderAdder.h
+                │   │   │   ├── IteratedNoder.h
+                │   │   │   ├── MCIndexNoder.h
+                │   │   │   ├── MCIndexSegmentSetMutualIntersector.h
+                │   │   │   ├── NodableSegmentString.h
+                │   │   │   ├── NodedSegmentString.h
+                │   │   │   ├── Noder.h
+                │   │   │   ├── NodingIntersectionFinder.h
+                │   │   │   ├── NodingValidator.h
+                │   │   │   ├── Octant.h
+                │   │   │   ├── OrientedCoordinateArray.h
+                │   │   │   ├── ScaledNoder.h
+                │   │   │   ├── SegmentExtractingNoder.h
+                │   │   │   ├── SegmentIntersectionDetector.h
+                │   │   │   ├── SegmentIntersector.h
+                │   │   │   ├── SegmentNode.h
+                │   │   │   ├── SegmentNodeList.h
+                │   │   │   ├── SegmentPointComparator.h
+                │   │   │   ├── SegmentSetMutualIntersector.h
+                │   │   │   ├── SegmentString.h
+                │   │   │   ├── SegmentStringUtil.h
+                │   │   │   ├── SimpleNoder.h
+                │   │   │   ├── SinglePassNoder.h
+                │   │   │   ├── ValidatingNoder.h
+                │   │   │   ├── snap
+                │   │   │   │   ├── SnappingIntersectionAdder.h
+                │   │   │   │   ├── SnappingNoder.h
+                │   │   │   │   └── SnappingPointIndex.h
+                │   │   │   └── snapround
+                │   │   │       ├── HotPixel.h
+                │   │   │       ├── HotPixelIndex.h
+                │   │   │       ├── MCIndexPointSnapper.h
+                │   │   │       ├── MCIndexSnapRounder.h
+                │   │   │       ├── SnapRoundingIntersectionAdder.h
+                │   │   │       └── SnapRoundingNoder.h
+                │   │   ├── operation
+                │   │   │   ├── BoundaryOp.h
+                │   │   │   ├── GeometryGraphOperation.h
+                │   │   │   ├── buffer
+                │   │   │   │   ├── BufferBuilder.h
+                │   │   │   │   ├── BufferCurveSetBuilder.h
+                │   │   │   │   ├── BufferInputLineSimplifier.h
+                │   │   │   │   ├── BufferOp.h
+                │   │   │   │   ├── BufferParameters.h
+                │   │   │   │   ├── BufferSubgraph.h
+                │   │   │   │   ├── OffsetCurve.h
+                │   │   │   │   ├── OffsetCurveBuilder.h
+                │   │   │   │   ├── OffsetCurveSection.h
+                │   │   │   │   ├── OffsetSegmentGenerator.h
+                │   │   │   │   ├── OffsetSegmentString.h
+                │   │   │   │   ├── RightmostEdgeFinder.h
+                │   │   │   │   ├── SegmentMCIndex.h
+                │   │   │   │   └── SubgraphDepthLocater.h
+                │   │   │   ├── cluster
+                │   │   │   │   ├── AbstractClusterFinder.h
+                │   │   │   │   ├── Clusters.h
+                │   │   │   │   ├── DBSCANClusterFinder.h
+                │   │   │   │   ├── DisjointOperation.h
+                │   │   │   │   ├── EnvelopeDistanceClusterFinder.h
+                │   │   │   │   ├── EnvelopeIntersectsClusterFinder.h
+                │   │   │   │   ├── GeometryDistanceClusterFinder.h
+                │   │   │   │   ├── GeometryFlattener.h
+                │   │   │   │   ├── GeometryIntersectsClusterFinder.h
+                │   │   │   │   └── UnionFind.h
+                │   │   │   ├── distance
+                │   │   │   │   ├── ConnectedElementLocationFilter.h
+                │   │   │   │   ├── ConnectedElementPointFilter.h
+                │   │   │   │   ├── DistanceOp.h
+                │   │   │   │   ├── FacetSequence.h
+                │   │   │   │   ├── FacetSequenceTreeBuilder.h
+                │   │   │   │   ├── GeometryLocation.h
+                │   │   │   │   └── IndexedFacetDistance.h
+                │   │   │   ├── intersection
+                │   │   │   │   ├── Rectangle.h
+                │   │   │   │   ├── RectangleIntersection.h
+                │   │   │   │   └── RectangleIntersectionBuilder.h
+                │   │   │   ├── linemerge
+                │   │   │   │   ├── EdgeString.h
+                │   │   │   │   ├── LineMergeDirectedEdge.h
+                │   │   │   │   ├── LineMergeEdge.h
+                │   │   │   │   ├── LineMergeGraph.h
+                │   │   │   │   ├── LineMerger.h
+                │   │   │   │   └── LineSequencer.h
+                │   │   │   ├── overlay
+                │   │   │   │   ├── MaximalEdgeRing.h
+                │   │   │   │   ├── MinimalEdgeRing.h
+                │   │   │   │   ├── OverlayNodeFactory.h
+                │   │   │   │   ├── PolygonBuilder.h
+                │   │   │   │   ├── snap
+                │   │   │   │   │   ├── GeometrySnapper.h
+                │   │   │   │   │   ├── LineStringSnapper.h
+                │   │   │   │   │   └── SnapOverlayOp.h
+                │   │   │   │   └── validate
+                │   │   │   │       ├── FuzzyPointLocator.h
+                │   │   │   │       ├── OffsetPointGenerator.h
+                │   │   │   │       └── OverlayResultValidator.h
+                │   │   │   ├── overlayng
+                │   │   │   │   ├── CoverageUnion.h
+                │   │   │   │   ├── Edge.h
+                │   │   │   │   ├── EdgeKey.h
+                │   │   │   │   ├── EdgeMerger.h
+                │   │   │   │   ├── EdgeNodingBuilder.h
+                │   │   │   │   ├── EdgeSourceInfo.h
+                │   │   │   │   ├── ElevationModel.h
+                │   │   │   │   ├── IndexedPointOnLineLocator.h
+                │   │   │   │   ├── InputGeometry.h
+                │   │   │   │   ├── IntersectionPointBuilder.h
+                │   │   │   │   ├── LineBuilder.h
+                │   │   │   │   ├── LineLimiter.h
+                │   │   │   │   ├── MaximalEdgeRing.h
+                │   │   │   │   ├── OverlayEdge.h
+                │   │   │   │   ├── OverlayEdgeRing.h
+                │   │   │   │   ├── OverlayGraph.h
+                │   │   │   │   ├── OverlayLabel.h
+                │   │   │   │   ├── OverlayLabeller.h
+                │   │   │   │   ├── OverlayMixedPoints.h
+                │   │   │   │   ├── OverlayNG.h
+                │   │   │   │   ├── OverlayNGRobust.h
+                │   │   │   │   ├── OverlayPoints.h
+                │   │   │   │   ├── OverlayUtil.h
+                │   │   │   │   ├── PolygonBuilder.h
+                │   │   │   │   ├── PrecisionReducer.h
+                │   │   │   │   ├── PrecisionUtil.h
+                │   │   │   │   ├── RingClipper.h
+                │   │   │   │   ├── RobustClipEnvelopeComputer.h
+                │   │   │   │   └── UnaryUnionNG.h
+                │   │   │   ├── polygonize
+                │   │   │   │   ├── BuildArea.h
+                │   │   │   │   ├── EdgeRing.h
+                │   │   │   │   ├── HoleAssigner.h
+                │   │   │   │   ├── PolygonizeDirectedEdge.h
+                │   │   │   │   ├── PolygonizeEdge.h
+                │   │   │   │   ├── PolygonizeGraph.h
+                │   │   │   │   └── Polygonizer.h
+                │   │   │   ├── predicate
+                │   │   │   │   ├── RectangleContains.h
+                │   │   │   │   ├── RectangleIntersects.h
+                │   │   │   │   └── SegmentIntersectionTester.h
+                │   │   │   ├── relate
+                │   │   │   │   ├── EdgeEndBuilder.h
+                │   │   │   │   ├── EdgeEndBundle.h
+                │   │   │   │   ├── EdgeEndBundleStar.h
+                │   │   │   │   ├── RelateComputer.h
+                │   │   │   │   ├── RelateNode.h
+                │   │   │   │   ├── RelateNodeFactory.h
+                │   │   │   │   ├── RelateNodeGraph.h
+                │   │   │   │   └── RelateOp.h
+                │   │   │   ├── sharedpaths
+                │   │   │   │   └── SharedPathsOp.h
+                │   │   │   ├── union
+                │   │   │   │   ├── CascadedPolygonUnion.h
+                │   │   │   │   ├── CoverageUnion.h
+                │   │   │   │   ├── DisjointSubsetUnion.h
+                │   │   │   │   ├── OverlapUnion.h
+                │   │   │   │   ├── PointGeometryUnion.h
+                │   │   │   │   ├── UnaryUnionOp.h
+                │   │   │   │   └── UnionStrategy.h
+                │   │   │   └── valid
+                │   │   │       ├── ConsistentAreaTester.h
+                │   │   │       ├── IndexedNestedHoleTester.h
+                │   │   │       ├── IndexedNestedPolygonTester.h
+                │   │   │       ├── IsSimpleOp.h
+                │   │   │       ├── IsValidOp.h
+                │   │   │       ├── MakeValid.h
+                │   │   │       ├── PolygonIntersectionAnalyzer.h
+                │   │   │       ├── PolygonRing.h
+                │   │   │       ├── PolygonRingSelfNode.h
+                │   │   │       ├── PolygonRingTouch.h
+                │   │   │       ├── PolygonTopologyAnalyzer.h
+                │   │   │       ├── RepeatedPointRemover.h
+                │   │   │       ├── RepeatedPointTester.h
+                │   │   │       └── TopologyValidationError.h
+                │   │   ├── planargraph
+                │   │   │   ├── DirectedEdge.h
+                │   │   │   ├── DirectedEdgeStar.h
+                │   │   │   ├── Edge.h
+                │   │   │   ├── GraphComponent.h
+                │   │   │   ├── Node.h
+                │   │   │   ├── NodeMap.h
+                │   │   │   ├── PlanarGraph.h
+                │   │   │   ├── Subgraph.h
+                │   │   │   └── algorithm
+                │   │   │       └── ConnectedSubgraphFinder.h
+                │   │   ├── precision
+                │   │   │   ├── CommonBits.h
+                │   │   │   ├── CommonBitsOp.h
+                │   │   │   ├── CommonBitsRemover.h
+                │   │   │   ├── EnhancedPrecisionOp.h
+                │   │   │   ├── GeometryPrecisionReducer.h
+                │   │   │   ├── MinimumClearance.h
+                │   │   │   ├── PointwisePrecisionReducerTransformer.h
+                │   │   │   ├── PrecisionReducerCoordinateOperation.h
+                │   │   │   ├── PrecisionReducerTransformer.h
+                │   │   │   └── SimpleGeometryPrecisionReducer.h
+                │   │   ├── profiler.h
+                │   │   ├── shape
+                │   │   │   └── fractal
+                │   │   │       ├── HilbertCode.h
+                │   │   │       ├── HilbertEncoder.h
+                │   │   │       └── MortonCode.h
+                │   │   ├── simplify
+                │   │   │   ├── DouglasPeuckerLineSimplifier.h
+                │   │   │   ├── DouglasPeuckerSimplifier.h
+                │   │   │   ├── LineSegmentIndex.h
+                │   │   │   ├── LinkedLine.h
+                │   │   │   ├── LinkedRing.h
+                │   │   │   ├── PolygonHullSimplifier.h
+                │   │   │   ├── RingHull.h
+                │   │   │   ├── RingHullIndex.h
+                │   │   │   ├── TaggedLineSegment.h
+                │   │   │   ├── TaggedLineString.h
+                │   │   │   ├── TaggedLineStringSimplifier.h
+                │   │   │   ├── TaggedLinesSimplifier.h
+                │   │   │   └── TopologyPreservingSimplifier.h
+                │   │   ├── triangulate
+                │   │   │   ├── DelaunayTriangulationBuilder.h
+                │   │   │   ├── IncrementalDelaunayTriangulator.h
+                │   │   │   ├── VoronoiDiagramBuilder.h
+                │   │   │   ├── polygon
+                │   │   │   │   ├── ConstrainedDelaunayTriangulator.h
+                │   │   │   │   ├── PolygonEarClipper.h
+                │   │   │   │   ├── PolygonHoleJoiner.h
+                │   │   │   │   ├── PolygonNoder.h
+                │   │   │   │   ├── PolygonTriangulator.h
+                │   │   │   │   └── TriDelaunayImprover.h
+                │   │   │   ├── quadedge
+                │   │   │   │   ├── LastFoundQuadEdgeLocator.h
+                │   │   │   │   ├── LocateFailureException.h
+                │   │   │   │   ├── QuadEdge.h
+                │   │   │   │   ├── QuadEdgeLocator.h
+                │   │   │   │   ├── QuadEdgeQuartet.h
+                │   │   │   │   ├── QuadEdgeSubdivision.h
+                │   │   │   │   ├── TrianglePredicate.h
+                │   │   │   │   ├── TriangleVisitor.h
+                │   │   │   │   └── Vertex.h
+                │   │   │   └── tri
+                │   │   │       ├── Tri.h
+                │   │   │       ├── TriEdge.h
+                │   │   │       ├── TriList.h
+                │   │   │       └── TriangulationBuilder.h
+                │   │   ├── unload.h
+                │   │   ├── util
+                │   │   │   ├── Assert.h
+                │   │   │   ├── AssertionFailedException.h
+                │   │   │   ├── CoordinateArrayFilter.h
+                │   │   │   ├── GEOSException.h
+                │   │   │   ├── GeometricShapeFactory.h
+                │   │   │   ├── IllegalArgumentException.h
+                │   │   │   ├── IllegalStateException.h
+                │   │   │   ├── Interrupt.h
+                │   │   │   ├── Machine.h
+                │   │   │   ├── TopologyException.h
+                │   │   │   ├── UniqueCoordinateArrayFilter.h
+                │   │   │   ├── UnsupportedOperationException.h
+                │   │   │   ├── math.h
+                │   │   │   └── string.h
+                │   │   ├── util.h
+                │   │   ├── vend
+                │   │   │   ├── include_nlohmann_json.hpp
+                │   │   │   └── json.hpp
+                │   │   └── version.h
+                │   ├── geos.h
+                │   ├── geos_c.h
+                │   ├── librttopo.h
+                │   ├── librttopo_geom.h
+                │   ├── proj
+                │   │   ├── common.hpp
+                │   │   ├── coordinateoperation.hpp
+                │   │   ├── coordinates.hpp
+                │   │   ├── coordinatesystem.hpp
+                │   │   ├── crs.hpp
+                │   │   ├── datum.hpp
+                │   │   ├── io.hpp
+                │   │   ├── metadata.hpp
+                │   │   ├── nn.hpp
+                │   │   └── util.hpp
+                │   ├── proj.h
+                │   ├── proj_constants.h
+                │   ├── proj_experimental.h
+                │   ├── proj_symbol_rename.h
+                │   ├── spatialite
+                │   │   ├── control_points.h
+                │   │   ├── debug.h
+                │   │   ├── gaia_network.h
+                │   │   ├── gaia_topology.h
+                │   │   ├── gaiaaux.h
+                │   │   ├── gaiaconfig-msvc.h
+                │   │   ├── gaiaconfig-msvc.h.in
+                │   │   ├── gaiaconfig.h
+                │   │   ├── gaiaconfig.h.in
+                │   │   ├── gaiaexif.h
+                │   │   ├── gaiageo.h
+                │   │   ├── gaiamatrix.h
+                │   │   ├── geojson.h
+                │   │   ├── geopackage.h
+                │   │   ├── gg_advanced.h
+                │   │   ├── gg_const.h
+                │   │   ├── gg_core.h
+                │   │   ├── gg_dxf.h
+                │   │   ├── gg_dynamic.h
+                │   │   ├── gg_formats.h
+                │   │   ├── gg_mbr.h
+                │   │   ├── gg_sequence.h
+                │   │   ├── gg_structs.h
+                │   │   ├── gg_wfs.h
+                │   │   ├── gg_xml.h
+                │   │   ├── spatialite_ext.h
+                │   │   ├── sqlite.h
+                │   │   └── stored_procedures.h
+                │   ├── spatialite.h
+                │   ├── sqlite3.h
+                │   ├── sqlite3ext.h
+                │   └── unicode
+                │       ├── alphaindex.h
+                │       ├── appendable.h
+                │       ├── basictz.h
+                │       ├── brkiter.h
+                │       ├── bytestream.h
+                │       ├── bytestrie.h
+                │       ├── bytestriebuilder.h
+                │       ├── calendar.h
+                │       ├── caniter.h
+                │       ├── casemap.h
+                │       ├── char16ptr.h
+                │       ├── chariter.h
+                │       ├── choicfmt.h
+                │       ├── coleitr.h
+                │       ├── coll.h
+                │       ├── compactdecimalformat.h
+                │       ├── curramt.h
+                │       ├── currpinf.h
+                │       ├── currunit.h
+                │       ├── datefmt.h
+                │       ├── dbbi.h
+                │       ├── dcfmtsym.h
+                │       ├── decimfmt.h
+                │       ├── displayoptions.h
+                │       ├── docmain.h
+                │       ├── dtfmtsym.h
+                │       ├── dtintrv.h
+                │       ├── dtitvfmt.h
+                │       ├── dtitvinf.h
+                │       ├── dtptngen.h
+                │       ├── dtrule.h
+                │       ├── edits.h
+                │       ├── enumset.h
+                │       ├── errorcode.h
+                │       ├── fieldpos.h
+                │       ├── filteredbrk.h
+                │       ├── fmtable.h
+                │       ├── format.h
+                │       ├── formattednumber.h
+                │       ├── formattedvalue.h
+                │       ├── fpositer.h
+                │       ├── gender.h
+                │       ├── gregocal.h
+                │       ├── icudataver.h
+                │       ├── icuplug.h
+                │       ├── idna.h
+                │       ├── listformatter.h
+                │       ├── localebuilder.h
+                │       ├── localematcher.h
+                │       ├── localpointer.h
+                │       ├── locdspnm.h
+                │       ├── locid.h
+                │       ├── measfmt.h
+                │       ├── measunit.h
+                │       ├── measure.h
+                │       ├── messagepattern.h
+                │       ├── msgfmt.h
+                │       ├── normalizer2.h
+                │       ├── normlzr.h
+                │       ├── nounit.h
+                │       ├── numberformatter.h
+                │       ├── numberrangeformatter.h
+                │       ├── numfmt.h
+                │       ├── numsys.h
+                │       ├── parseerr.h
+                │       ├── parsepos.h
+                │       ├── platform.h
+                │       ├── plurfmt.h
+                │       ├── plurrule.h
+                │       ├── ptypes.h
+                │       ├── putil.h
+                │       ├── rbbi.h
+                │       ├── rbnf.h
+                │       ├── rbtz.h
+                │       ├── regex.h
+                │       ├── region.h
+                │       ├── reldatefmt.h
+                │       ├── rep.h
+                │       ├── resbund.h
+                │       ├── schriter.h
+                │       ├── scientificnumberformatter.h
+                │       ├── search.h
+                │       ├── selfmt.h
+                │       ├── simpleformatter.h
+                │       ├── simplenumberformatter.h
+                │       ├── simpletz.h
+                │       ├── smpdtfmt.h
+                │       ├── sortkey.h
+                │       ├── std_string.h
+                │       ├── strenum.h
+                │       ├── stringoptions.h
+                │       ├── stringpiece.h
+                │       ├── stringtriebuilder.h
+                │       ├── stsearch.h
+                │       ├── symtable.h
+                │       ├── tblcoll.h
+                │       ├── timezone.h
+                │       ├── tmunit.h
+                │       ├── tmutamt.h
+                │       ├── tmutfmt.h
+                │       ├── translit.h
+                │       ├── tzfmt.h
+                │       ├── tznames.h
+                │       ├── tzrule.h
+                │       ├── tztrans.h
+                │       ├── ubidi.h
+                │       ├── ubiditransform.h
+                │       ├── ubrk.h
+                │       ├── ucal.h
+                │       ├── ucasemap.h
+                │       ├── ucat.h
+                │       ├── uchar.h
+                │       ├── ucharstrie.h
+                │       ├── ucharstriebuilder.h
+                │       ├── uchriter.h
+                │       ├── uclean.h
+                │       ├── ucnv.h
+                │       ├── ucnv_cb.h
+                │       ├── ucnv_err.h
+                │       ├── ucnvsel.h
+                │       ├── ucol.h
+                │       ├── ucoleitr.h
+                │       ├── uconfig.h
+                │       ├── ucpmap.h
+                │       ├── ucptrie.h
+                │       ├── ucsdet.h
+                │       ├── ucurr.h
+                │       ├── udat.h
+                │       ├── udata.h
+                │       ├── udateintervalformat.h
+                │       ├── udatpg.h
+                │       ├── udisplaycontext.h
+                │       ├── udisplayoptions.h
+                │       ├── uenum.h
+                │       ├── ufieldpositer.h
+                │       ├── uformattable.h
+                │       ├── uformattednumber.h
+                │       ├── uformattedvalue.h
+                │       ├── ugender.h
+                │       ├── uidna.h
+                │       ├── uiter.h
+                │       ├── uldnames.h
+                │       ├── ulistformatter.h
+                │       ├── uloc.h
+                │       ├── ulocdata.h
+                │       ├── umachine.h
+                │       ├── umisc.h
+                │       ├── umsg.h
+                │       ├── umutablecptrie.h
+                │       ├── unifilt.h
+                │       ├── unifunct.h
+                │       ├── unimatch.h
+                │       ├── unirepl.h
+                │       ├── uniset.h
+                │       ├── unistr.h
+                │       ├── unorm.h
+                │       ├── unorm2.h
+                │       ├── unum.h
+                │       ├── unumberformatter.h
+                │       ├── unumberoptions.h
+                │       ├── unumberrangeformatter.h
+                │       ├── unumsys.h
+                │       ├── uobject.h
+                │       ├── upluralrules.h
+                │       ├── uregex.h
+                │       ├── uregion.h
+                │       ├── ureldatefmt.h
+                │       ├── urename.h
+                │       ├── urep.h
+                │       ├── ures.h
+                │       ├── uscript.h
+                │       ├── usearch.h
+                │       ├── uset.h
+                │       ├── usetiter.h
+                │       ├── ushape.h
+                │       ├── usimplenumberformatter.h
+                │       ├── uspoof.h
+                │       ├── usprep.h
+                │       ├── ustring.h
+                │       ├── ustringtrie.h
+                │       ├── utext.h
+                │       ├── utf.h
+                │       ├── utf16.h
+                │       ├── utf32.h
+                │       ├── utf8.h
+                │       ├── utf_old.h
+                │       ├── utmscale.h
+                │       ├── utrace.h
+                │       ├── utrans.h
+                │       ├── utypes.h
+                │       ├── uvernum.h
+                │       ├── uversion.h
+                │       └── vtzone.h
+                └── libspatialiteall.a
+
+249 directories, 1427 files
