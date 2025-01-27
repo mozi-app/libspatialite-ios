@@ -1,0 +1,68 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+    "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libspatialiteall.a" : {
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/julianlo/Documents/mozi/libspatialite-ios/libspatialite.xcframework/macos-arm64/libspatialiteall.a"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libspatialiteall.a"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+
+  },
+  "targetDependencyMap" : {
+    "SpatialiteObjC" : [
+      "libspatialite"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "writeCommands" : {
+    "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.o"
+        }
+      ],
+      "outputFilePath" : "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.product/Objects.LinkFileList"
+    }
+  }
+}

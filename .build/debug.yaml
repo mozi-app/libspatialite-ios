@@ -1,0 +1,63 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "SpatialiteObjC-arm64-apple-macosx15.0-debug.dylib": ["<SpatialiteObjC-arm64-apple-macosx15.0-debug.dylib>"]
+  "SpatialiteObjC-arm64-apple-macosx15.0-debug.module": ["<SpatialiteObjC-arm64-apple-macosx15.0-debug.module>"]
+  "main": ["<SpatialiteObjC-arm64-apple-macosx15.0-debug.dylib>","<SpatialiteObjC-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<SpatialiteObjC-arm64-apple-macosx15.0-debug.dylib>","<SpatialiteObjC-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/julianlo/Documents/mozi/libspatialite-ios/Sources/SpatialiteObjC/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/julianlo/Documents/mozi/libspatialite-ios/libspatialite.xcframework/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.o":
+    tool: clang
+    inputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libspatialiteall.a","/Users/julianlo/Documents/mozi/libspatialite-ios/Sources/SpatialiteObjC/LibSpatialite.m"]
+    outputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.o"]
+    description: "Compiling SpatialiteObjC LibSpatialite.m"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx12.0","-O0","-DSWIFT_PACKAGE=1","-DDEBUG=1","-fblocks","-index-store-path","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/index/store","-fmodules","-fmodule-name=SpatialiteObjC","-fmodules-cache-path=/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/ModuleCache","-F","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug","-I","/Users/julianlo/Documents/mozi/libspatialite-ios/Sources/SpatialiteObjC/include","-I","/Users/julianlo/Documents/mozi/libspatialite-ios/libspatialite.xcframework/macos-arm64/Headers","-isysroot","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.d","-c","/Users/julianlo/Documents/mozi/libspatialite-ios/Sources/SpatialiteObjC/LibSpatialite.m","-o","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.o"]
+    deps: "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.d"
+
+  "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.o"]
+    outputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.product/Objects.LinkFileList"
+
+  "/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libspatialiteall.a":
+    tool: copy-tool
+    inputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/libspatialite.xcframework/macos-arm64/libspatialiteall.a"]
+    outputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libspatialiteall.a"]
+    description: "Copying /Users/julianlo/Documents/mozi/libspatialite-ios/libspatialite.xcframework/macos-arm64/libspatialiteall.a"
+
+  "<SpatialiteObjC-arm64-apple-macosx15.0-debug.dylib>":
+    tool: phony
+    inputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libSpatialiteObjC.dylib"]
+    outputs: ["<SpatialiteObjC-arm64-apple-macosx15.0-debug.dylib>"]
+
+  "<SpatialiteObjC-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.o"]
+    outputs: ["<SpatialiteObjC-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.SpatialiteObjC-arm64-apple-macosx15.0-debug.dylib":
+    tool: shell
+    inputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.build/LibSpatialite.m.o","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.product/Objects.LinkFileList"]
+    outputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libSpatialiteObjC.dylib"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/libSpatialiteObjC.dylib"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-lspatialiteall","-F","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug","-L","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug","-o","/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/libSpatialiteObjC.dylib","-module-name","SpatialiteObjC","-Xlinker","-no_warn_duplicate_libraries","-emit-library","-Xlinker","-install_name","-Xlinker","@rpath/libSpatialiteObjC.dylib","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/julianlo/Documents/mozi/libspatialite-ios/.build/arm64-apple-macosx/debug/SpatialiteObjC.product/Objects.LinkFileList","-runtime-compatibility-version","none","-target","arm64-apple-macosx12.0","-lz","-liconv","-lc++","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/julianlo/Documents/mozi/libspatialite-ios/Sources/SpatialiteObjC/","/Users/julianlo/Documents/mozi/libspatialite-ios/libspatialite.xcframework/","/Users/julianlo/Documents/mozi/libspatialite-ios/Package.swift","/Users/julianlo/Documents/mozi/libspatialite-ios/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

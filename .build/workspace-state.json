@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "libspatialite-ios",
+          "kind" : "root",
+          "location" : "/Users/julianlo/Documents/mozi/libspatialite-ios",
+          "name" : "libspatialite-ios"
+        },
+        "path" : "/Users/julianlo/Documents/mozi/libspatialite-ios/libspatialite.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "libspatialite"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}

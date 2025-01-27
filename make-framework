@@ -3,9 +3,11 @@
 pushd lib
 libtool -o libspatialiteall.a *.a
 popd
-pushd build/arm64-ios/lib
+#pushd build/arm64-ios/lib
+pushd build/arm64-macos/lib
 libtool -o libspatialiteall.a *.a
 popd
 
 # Make framework
-xcodebuild -create-xcframework -library lib/libspatialiteall.a -headers include/ -library build/arm64-ios/lib/libspatialiteall.a -headers include/ -output libspatialite.xcframework
+xcodebuild -create-xcframework -library lib/libspatialiteall.a -headers include/ -library build/arm64-macos/lib/libspatialiteall.a -headers include/ -output libspatialite.xcframework
+#xcodebuild -create-xcframework -library lib/libspatialiteall.a -headers include/ -library build/arm64-ios/lib/libspatialiteall.a -headers include/ -output libspatialite.xcframework

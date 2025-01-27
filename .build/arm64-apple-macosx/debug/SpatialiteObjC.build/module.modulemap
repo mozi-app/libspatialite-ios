@@ -1,0 +1,4 @@
+module SpatialiteObjC {
+    umbrella "/Users/julianlo/Documents/mozi/libspatialite-ios/Sources/SpatialiteObjC/include"
+    export *
+}

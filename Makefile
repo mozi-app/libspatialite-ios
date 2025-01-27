@@ -13,9 +13,7 @@ all: build_arches
 # Build separate architectures
 # see https://www.innerfence.com/howto/apple-ios-devices-dates-versions-instruction-sets
 build_arches:
-	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneOS IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0 IOS_ARCH_DIR=arm64-ios
-	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim
-	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim
+	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=MacOSX IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-macos12.0 IOS_ARCH_DIR=arm64-macos IOS_VERSION_OPTIONS=""
 
 
 
@@ -25,11 +23,13 @@ LIBDIR = ${PREFIX}/lib
 BINDIR = ${PREFIX}/bin
 INCLUDEDIR = ${PREFIX}/include
 UTHASHDIR = ${CURDIR}/uthash
+# -mios-version-min=17.0 
+IOS_VERSION_OPTIONS=-mios-version-min=17.0 
 
 CXX = ${XCODE_DEVELOPER}/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 CC = ${XCODE_DEVELOPER}/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 CFLAGS =-target ${IOS_TARGET} -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} -mios-version-min=17.0 -Os -fembed-bitcode
-CXXFLAGS =-target ${IOS_TARGET} -stdlib=libc++ -std=c++11 -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} -mios-version-min=17.0 -Os -fembed-bitcode
+CXXFLAGS =-target ${IOS_TARGET} -stdlib=libc++ -std=c++11 -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} ${IOS_VERSION_OPTIONS} -Os -fembed-bitcode
 LDFLAGS =-stdlib=libc++ -isysroot ${IOS_SDK} -L${LIBDIR} -L${IOS_SDK}/usr/lib -arch ${IOS_ARCH} -mios-version-min=17.0
 
 arch: ${LIBDIR}/libspatialite.a
