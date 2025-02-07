@@ -15,7 +15,7 @@ all: build_arches
 build_arches:
 	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=MacOSX OSX_HOST=arm-apple-darwin OSX_TARGET=arm64-apple-macos12.0 IOS_ARCH_DIR=arm64-macos OS_TARGET=Darwin
 	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneOS IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0 IOS_ARCH_DIR=arm64-ios OS_TARGET=iOS
-#	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim OS_TARGET=iOS
+	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim OS_TARGET=iOS
 
 BUILD_DIR = ${CURDIR}/build
 PREFIX = ${BUILD_DIR}/${IOS_ARCH_DIR}
@@ -26,11 +26,8 @@ UTHASHDIR = ${CURDIR}/uthash
 
 CXX = ${XCODE_DEVELOPER}/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 CC = ${XCODE_DEVELOPER}/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
-#CFLAGS =-target ${IOS_TARGET} -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} -mios-version-min=17.0 -Os -fembed-bitcode
 CFLAGS =-target "${IOS_TARGET}${OSX_TARGET}" -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} -Os -fembed-bitcode
-#CXXFLAGS =-target ${IOS_TARGET} -stdlib=libc++ -std=c++11 -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} -mios-version-min=17.0 -Os -fembed-bitcode
 CXXFLAGS =-target "${IOS_TARGET}${OSX_TARGET}" -stdlib=libc++ -std=c++11 -isysroot ${IOS_SDK} -I${IOS_SDK}/usr/include -I${INCLUDEDIR} -I${UTHASHDIR} -Os -fembed-bitcode
-#LDFLAGS =-stdlib=libc++ -isysroot ${IOS_SDK} -L${LIBDIR} -L${IOS_SDK}/usr/lib -arch ${IOS_ARCH} -mios-version-min=17.0
 LDFLAGS =-stdlib=libc++ -isysroot ${IOS_SDK} -L${LIBDIR} -L${IOS_SDK}/usr/lib -arch ${IOS_ARCH}
 
 arch: ${LIBDIR}/libspatialite.a
@@ -99,7 +96,7 @@ ${LIBDIR}/libproj.a: ${CURDIR}/proj
 	-DENABLE_CURL=OFF \
 	-DENABLE_TIFF=OFF \
 	-DSQLITE3_INCLUDE_DIR=${IOS_SDK}/usr/include \
-	&& cmake  --build . --config Release -j 12 && cmake --install . --config Release
+	&& cmake --build . --config Release -j 12 && cmake --install . --config Release
 
 ${CURDIR}/proj:
 	curl -L https://download.osgeo.org/proj/proj-9.2.1.tar.gz > proj.tar.gz
@@ -116,53 +113,13 @@ ${LIBDIR}/libgeos.a: ${CURDIR}/geos
 	-DCMAKE_INSTALL_PREFIX:PATH="${PREFIX}" \
 	-DCMAKE_OSX_ARCHITECTURES=${IOS_ARCH} \
 	-DCMAKE_OSX_SYSROOT:PATH="${IOS_SDK}" -DBUILD_GEOSOP:BOOL=OFF -DBUILD_SHARED_LIBS:BOOL=OFF -DBUILD_TESTING:BOOL=OFF \
-	&& cmake  --build . --config Release -j 12 && cmake --install . --config Release
+	&& cmake --build . --config Release -j 12 && cmake --install . --config Release
 
 ${CURDIR}/geos:
 	curl https://download.osgeo.org/geos/geos-3.12.0.tar.bz2 > geos.tar.bz2
 	tar -xzf geos.tar.bz2
 	rm geos.tar.bz2
 	mv geos-3.12.0 geos
-
-
-
-#SQLITE_FLAGS=-DNDEBUG=1 \
-#	-DHAVE_USLEEP=1 \
-#	-DSQLITE_HAVE_ISNAN \
-#	-DSQLITE_DEFAULT_JOURNAL_SIZE_LIMIT=1048576 \
-#	-DSQLITE_THREADSAFE=2 \
-#	-DSQLITE_TEMP_STORE=3 \
-#	-DSQLITE_POWERSAFE_OVERWRITE=1 \
-#	-DSQLITE_DEFAULT_FILE_FORMAT=4 \
-#	-DSQLITE_DEFAULT_AUTOVACUUM=1 \
-#	-DSQLITE_ENABLE_MEMORY_MANAGEMENT=1 \
-#	-DSQLITE_ENABLE_FTS3 \
-#	-DSQLITE_ENABLE_FTS4 \
-#	-DSQLITE_ENABLE_JSON1 \
-#	-DSQLITE_OMIT_BUILTIN_TEST \
-#	-DSQLITE_OMIT_COMPILEOPTION_DIAGS \
-#	-DSQLITE_DEFAULT_FILE_PERMISSIONS=0600 \
-#	-DSQLITE_ENABLE_RTREE \
-#	-DSQLITE_ENABLE_ICU \
-#	-DSQLITE_ENABLE_LOAD_EXTENSION
-#${LIBDIR}/libsqlite3.a: ${CURDIR}/sqlite3 ${LIBDIR}/libicu.a
-#	cd sqlite3 && \
-#	LIBTOOL=${XCODE_DEVELOPER}/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool \
-#	CXX=${CXX} \
-#	CC=${CC} \
-#	CFLAGS="${CFLAGS}" \
-#	CXXFLAGS="${CXXFLAGS}" \
-#	LDFLAGS="-Wl,-arch -Wl,${IOS_ARCH} -arch_only ${IOS_ARCH} ${LDFLAGS} -licudata -licui18n -licuuc" \
-#	${CC} -c sqlite3.c ${CFLAGS} ${SQLITE_FLAGS} -o "${LIBDIR}/libsqlite3.a"
-#	cp -f -v "${CURDIR}/sqlite3/"*.h ${INCLUDEDIR}
-
-#${CURDIR}/sqlite3:
-#	curl -L https://www.sqlite.org/2023/sqlite-amalgamation-3430200.zip -o sqlite3.zip
-#	unzip sqlite3.zip
-#	rm sqlite3.zip
-#	mv sqlite-amalgamation-3430200 sqlite3
-#	./patch-sqlite3
-#	touch sqlite3
 
 ${LIBDIR}/libicu.a: ${CURDIR}/icu
 	mkdir -p "${CURDIR}/icu/build/${IOS_ARCH_DIR}" && cd "${CURDIR}/icu/build/${IOS_ARCH_DIR}" && \

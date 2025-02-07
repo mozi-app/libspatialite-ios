@@ -1,15 +1,21 @@
 #!/bin/sh
 
-operationg_systems=(ios macos)
+rm -rf libspatialite.xcframework
+
+operationg_systems=(ios macos sim)
 architectures=(arm64)
+
+command="xcodebuild -create-xcframework -output libspatialite.xcframework"
     
 for arch in "${architectures[@]}"; do
 	for os in "${operationg_systems[@]}"; do
 		if [ -d "build/$arch-$os" ]; then
 			echo "Building $arch-$os"
 			cd "build/$arch-$os/lib"
+			rm -f libspatialiteall.a
 			libtool -o libspatialiteall.a *.a
 			cd -
+			command="$command -library build/$arch-$os/lib/libspatialiteall.a -headers include/"
 		else
 			echo "Skipping $arch-$os"
 		fi
@@ -17,4 +23,4 @@ for arch in "${architectures[@]}"; do
 done
 
 # Make framework
-xcodebuild -create-xcframework -library build/arm64-ios/lib/libspatialiteall.a -headers include/ -library build/arm64-macos/lib/libspatialiteall.a -headers include/ -output libspatialite.xcframework
+$command
