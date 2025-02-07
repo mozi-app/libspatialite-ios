@@ -17,4 +17,4 @@ for arch in "${architectures[@]}"; do
 done
 
 # Make framework
-xcodebuild -create-xcframework -library build/arm64-ios/lib/libspatialiteall.a -library build/arm64-macos/lib/libspatialiteall.a -headers include/ -output libspatialite.xcframework
+xcodebuild -create-xcframework -library build/arm64-ios/lib/libspatialiteall.a -headers include/ -library build/arm64-macos/lib/libspatialiteall.a -headers include/ -output libspatialite.xcframework

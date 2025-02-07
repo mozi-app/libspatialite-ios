@@ -15,8 +15,7 @@ all: build_arches
 build_arches:
 	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=MacOSX OSX_HOST=arm-apple-darwin OSX_TARGET=arm64-apple-macos12.0 IOS_ARCH_DIR=arm64-macos OS_TARGET=Darwin
 	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneOS IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0 IOS_ARCH_DIR=arm64-ios OS_TARGET=iOS
-	#${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim OS_TARGET=iOS
-	#${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim OS_TARGET=iOS
+#	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim OS_TARGET=iOS
 
 BUILD_DIR = ${CURDIR}/build
 PREFIX = ${BUILD_DIR}/${IOS_ARCH_DIR}
