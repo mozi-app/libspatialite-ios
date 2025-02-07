@@ -1,0 +1,11 @@
+--- spatialite/src/stored_procedures/stored_procedures.c.orig	2025-02-07 13:53:04
++++ spatialite/src/stored_procedures/stored_procedures.c	2025-02-07 13:53:09
+@@ -2062,7 +2062,7 @@
+ 	  return NULL;
+       }
+ #ifndef LOADABLE_EXTENSION
+-    sqlite3_enable_load_extension (handle, 1);
++    //    sqlite3_enable_load_extension (handle, 1);
+ #endif
+     spatialite_internal_init (handle, cache);
+     return handle;

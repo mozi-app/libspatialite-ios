@@ -13,10 +13,10 @@ all: build_arches
 # Build separate architectures
 # see https://www.innerfence.com/howto/apple-ios-devices-dates-versions-instruction-sets
 build_arches:
-	${MAKE} arch OSX_ARCH=arm64 IOS_PLATFORM=MacOSX OSX_HOST=arm-apple-darwin OSX_TARGET=arm64-apple-macos12.0 OSX_ARCH_DIR=arm64-macos
-	#${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneOS IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0 IOS_ARCH_DIR=arm64-ios
-	#${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim
-	#${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim
+	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=MacOSX OSX_HOST=arm-apple-darwin OSX_TARGET=arm64-apple-macos12.0 IOS_ARCH_DIR=arm64-macos OS_TARGET=Darwin
+	${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneOS IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0 IOS_ARCH_DIR=arm64-ios OS_TARGET=iOS
+	#${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim OS_TARGET=iOS
+	#${MAKE} arch IOS_ARCH=arm64 IOS_PLATFORM=iPhoneSimulator IOS_HOST=arm-apple-darwin IOS_TARGET=arm64-apple-ios17.0-simulator IOS_ARCH_DIR=arm64-sim OS_TARGET=iOS
 
 BUILD_DIR = ${CURDIR}/build
 PREFIX = ${BUILD_DIR}/${IOS_ARCH_DIR}
@@ -36,7 +36,7 @@ LDFLAGS =-stdlib=libc++ -isysroot ${IOS_SDK} -L${LIBDIR} -L${IOS_SDK}/usr/lib -a
 
 arch: ${LIBDIR}/libspatialite.a
 
-${LIBDIR}/libspatialite.a: ${LIBDIR}/libproj.a ${LIBDIR}/libgeos.a ${LIBDIR}/rttopo.a ${CURDIR}/spatialite
+${LIBDIR}/libspatialite.a: ${LIBDIR}/libproj.a ${LIBDIR}/libgeos.a ${LIBDIR}/rttopo.a ${LIBDIR}/libicu.a ${CURDIR}/spatialite
 	cd spatialite && env \
 	CXX=${CXX} \
 	CC=${CC} \
@@ -52,6 +52,7 @@ ${LIBDIR}/libspatialite.a: ${LIBDIR}/libproj.a ${LIBDIR}/libgeos.a ${LIBDIR}/rtt
     --disable-examples \
     --disable-libxml2 \
     --disable-shared \
+	--disable-dynamic-extensions \
 	&& make clean install-strip
 
 ${CURDIR}/spatialite:
@@ -80,12 +81,12 @@ ${LIBDIR}/rttopo.a: ${CURDIR}/rttopo
 	--prefix=${PREFIX} \
 	--disable-shared \
 	--with-geosconfig=${BINDIR}/geos-config \
-	&& make clean install
+	&& make install
 
 
 ${LIBDIR}/libproj.a: ${CURDIR}/proj
 	cd proj && cmake \
-	-DCMAKE_SYSTEM_NAME=iOS \
+	-DCMAKE_SYSTEM_NAME="${OS_TARGET}" \
 	-DCMAKE_CXX_COMPILER="${CXX}" \
 	-DCMAKE_C_COMPILER="${CC}" \
 	-DCMAKE_C_FLAGS="${CFLAGS}" \
@@ -98,8 +99,8 @@ ${LIBDIR}/libproj.a: ${CURDIR}/proj
 	-DBUILD_TESTING=OFF \
 	-DENABLE_CURL=OFF \
 	-DENABLE_TIFF=OFF \
-	-DSQLITE3_INCLUDE_DIR=${INCLUDEDIR} \
-	&& cmake --build . --target clean && cmake  --build . --config Release -j 12 && cmake --install . --config Release
+	-DSQLITE3_INCLUDE_DIR=${IOS_SDK}/usr/include \
+	&& cmake  --build . --config Release -j 12 && cmake --install . --config Release
 
 ${CURDIR}/proj:
 	curl -L https://download.osgeo.org/proj/proj-9.2.1.tar.gz > proj.tar.gz
@@ -116,7 +117,7 @@ ${LIBDIR}/libgeos.a: ${CURDIR}/geos
 	-DCMAKE_INSTALL_PREFIX:PATH="${PREFIX}" \
 	-DCMAKE_OSX_ARCHITECTURES=${IOS_ARCH} \
 	-DCMAKE_OSX_SYSROOT:PATH="${IOS_SDK}" -DBUILD_GEOSOP:BOOL=OFF -DBUILD_SHARED_LIBS:BOOL=OFF -DBUILD_TESTING:BOOL=OFF \
-	&& cmake --build . --target clean && cmake  --build . --config Release -j 12 && cmake --install . --config Release
+	&& cmake  --build . --config Release -j 12 && cmake --install . --config Release
 
 ${CURDIR}/geos:
 	curl https://download.osgeo.org/geos/geos-3.12.0.tar.bz2 > geos.tar.bz2
