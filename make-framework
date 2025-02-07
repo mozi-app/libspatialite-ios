@@ -24,3 +24,5 @@ done
 
 # Make framework
 $command
+
+zip -r libspatialite.xcframework.zip libspatialite.xcframework
