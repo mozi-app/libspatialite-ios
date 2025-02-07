@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
   name: "libspatialite",
-  platforms: [.iOS(.v17)],
+  platforms: [.iOS(.v17), .macOS(.v12)],
   products: [
     .library(name: "SpatialiteObjC", type: .dynamic, targets: ["SpatialiteObjC"]),
     .library(name: "libspatialite", targets: ["libspatialite"]),
@@ -11,8 +11,9 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "libspatialite",
-      url: "https://github.com/mozi-app/libspatialite-ios/releases/download/v0.1.0/libspatialite.xcframework.zip",
-      checksum: "f152b53c5c042544ec1d97eb50be1f8d129c6d2b33a2b627322930997ffe24ba"
+      path: "libspatialite.xcframework"
+    //  url: "https://github.com/mozi-app/libspatialite-ios/releases/download/v0.1.0/libspatialite.xcframework.zip",
+    //  checksum: "f152b53c5c042544ec1d97eb50be1f8d129c6d2b33a2b627322930997ffe24ba"
     ),
     .target(
       name: "SpatialiteObjC",
@@ -26,6 +27,7 @@ let package = Package(
         .linkedLibrary("z"),
         .linkedLibrary("iconv"),
         .linkedLibrary("c++"),
+        .linkedLibrary("sqlite3"),
       ]
     ),
   ]
