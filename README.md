@@ -19,6 +19,8 @@ dynamically linked, so it is not necessary to statically link it.
 
 **This fork is compatible with GRDB**
 
+**There is no longer support for AMD64/X86_64 simulators.**
+
 Requirements
 ------------
 Xcode 16 with Command Line Tools installed.
