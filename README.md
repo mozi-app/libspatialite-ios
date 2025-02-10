@@ -1,23 +1,33 @@
 libspatialite-ios
 =================
 
-A Makefile for automatically downloading and compiling [libspatialite](https://www.gaia-gis.it/fossil/libspatialite/index) (including its dependencies [SQLite](http://sqlite.org/index.html), [GEOS](http://trac.osgeo.org/geos/) and [PROJ.4](https://trac.osgeo.org/proj/)) statically for iOS.
+This is a fork of [libspatialiate-ios](https://github.com/gstf/libspatialite-ios) containing
+additional impprovements and bugfixes from the following forks:
 
-The resulting library is a "fat" library suitable for multiple architectures. This includes:
+ * https://github.com/davenquinn/libspatialite-ios
+ * https://github.com/smellman/libspatialite-ios
+ * https://github.com/iulian0512/libspatialite-ios
 
-- armv7 (iOS)
-- armv7s (iOS)
-- arm64 (iOS)
-- i386 (iOS Simulator)
+This fork adds support for a single xcframework target containing support for:
+ * macOS
+ * iOS
+ * iOS Simulator
+
+**Additionally, this fork removes the build for SQLite itself and instead uses
+the system version of SQLite.** The system version of SQLite is intended to be
+dynamically linked, so it is not necessary to statically link it.
+
+**This fork is compatible with GRDB**
 
 Requirements
 ------------
-
-Xcode 6 with Command Line Tools installed.
+Xcode 16 with Command Line Tools installed.
 
 Installation
 ------------
+Building the framework will take some time, but is invoked simply by running:
+```
+make
+```
 
-Simply run
-
-	make
+Note that the `Makefile` has been optimized for a system with 12 cores.
