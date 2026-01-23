@@ -23,7 +23,7 @@ dynamically linked, so it is not necessary to statically link it.
 
 Requirements
 ------------
-Xcode 16 with Command Line Tools installed.
+Xcode 16+ with Command Line Tools installed.
 
 Installation
 ------------
