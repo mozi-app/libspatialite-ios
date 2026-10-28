@@ -1,3 +1,5 @@
+> **Archived on 2026-10-28.** This repository is read-only. `apps/ios` in [`mozi-app/mozi`](https://github.com/mozi-app/mozi) still resolves this package by URL from here. Unarchive it before you change the package (MOZ-12245).
+
 libspatialite-ios
 =================
 
